@@ -1,0 +1,1867 @@
+2026-11-23 10:16:19,361 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 10:16:20,136 | INFO    | main                         | main:383 | Finished in 0.0 minutes
+2026-11-23 12:13:38,737 | INFO    | main                         | main:383 | Finished in 0.0 minutes
+2026-11-23 12:17:29,960 | INFO    | main                         | main:383 | Finished in 0.0 minutes
+2026-11-23 12:18:57,197 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:18:57,491 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:18:57,590 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=False | min_score=60 | max_apps=3
+2026-11-23 12:18:57,591 | WARNING | main                         | run:145 | AUTO_SUBMIT is OFF - forms are filled and validated but never sent
+2026-11-23 12:19:02,669 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:19:02,880 | INFO    | automation.authentication    | load_cookies:116 | Loaded 18 cookies from naukri_cookies.json
+2026-11-23 12:19:21,758 | ERROR   | main                         | run:170 | naukri: Still not signed in to naukri - aborting this run.
+2026-11-23 12:19:22,490 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:19:22,490 | INFO    | services.exporter            | export_session:71 | Nothing to export - no jobs were processed
+2026-11-23 12:19:22,497 | INFO    | main                         | main:383 | Finished in 0.4 minutes
+2026-11-23 12:20:54,166 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:20:54,193 | INFO    | automation.authentication    | load_cookies:116 | Loaded 18 cookies from naukri_cookies.json
+2026-11-23 12:20:54,939 | INFO    | automation.authentication    | is_naukri_logged_in:177 | Naukri landed on: https://www.naukri.com/mnjuser/homepage
+2026-11-23 12:20:55,119 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:21:10,770 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:21:10,936 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:21:10,944 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=False | min_score=60 | max_apps=2
+2026-11-23 12:21:10,944 | WARNING | main                         | run:145 | AUTO_SUBMIT is OFF - forms are filled and validated but never sent
+2026-11-23 12:21:11,636 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:21:11,644 | INFO    | automation.authentication    | load_cookies:116 | Loaded 18 cookies from naukri_cookies.json
+2026-11-23 12:21:12,556 | INFO    | automation.authentication    | is_naukri_logged_in:177 | Naukri landed on: https://www.naukri.com/mnjuser/homepage
+2026-11-23 12:21:12,556 | INFO    | automation.authentication    | ensure_logged_in:234 | naukri session is active
+2026-11-23 12:21:12,556 | INFO    | automation.naukri            | search:183 | Naukri page 1 | 'React.js Developer' in 'Gurugram, Haryana, India'
+2026-11-23 12:21:12,770 | ERROR   | main                         | run:195 | Search failed for 'React.js Developer' in 'Gurugram, Haryana, India': Naukri reported 'access denied' - stopping this run.
+Traceback (most recent call last):
+  File "c:\Users\HP\Desktop\auto_job\main.py", line 188, in run
+    discovered = list(searcher.search(keyword, location))
+  File "c:\Users\HP\Desktop\auto_job\automation\naukri.py", line 190, in search
+    self._check_restrictions()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\HP\Desktop\auto_job\automation\naukri.py", line 113, in _check_restrictions
+    raise RuntimeError("Naukri reported '" + marker + "' - stopping this run.")
+RuntimeError: Naukri reported 'access denied' - stopping this run.
+2026-11-23 12:21:13,020 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:21:13,020 | INFO    | services.exporter            | export_session:71 | Nothing to export - no jobs were processed
+2026-11-23 12:21:13,026 | INFO    | main                         | main:383 | Finished in 0.0 minutes
+2026-11-23 12:24:30,715 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:24:30,880 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:24:30,895 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=False | min_score=60 | max_apps=3
+2026-11-23 12:24:30,895 | WARNING | main                         | run:145 | AUTO_SUBMIT is OFF - forms are filled and validated but never sent
+2026-11-23 12:24:31,633 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:24:31,646 | INFO    | automation.authentication    | load_cookies:116 | Loaded 18 cookies from naukri_cookies.json
+2026-11-23 12:24:40,050 | INFO    | automation.authentication    | is_naukri_logged_in:177 | Naukri landed on: https://www.naukri.com/mnjuser/homepage
+2026-11-23 12:24:40,050 | INFO    | automation.authentication    | ensure_logged_in:234 | naukri session is active
+2026-11-23 12:24:40,050 | INFO    | automation.naukri            | search:198 | Naukri page 1 | 'React.js Developer' in 'Gurugram, Haryana, India'
+2026-11-23 12:24:43,610 | INFO    | automation.naukri            | search:217 | Found 20 Naukri cards
+2026-11-23 12:24:47,777 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Node Js Developer @ Shipmozo | exp=1.0
+2026-11-23 12:24:47,791 | INFO    | main                         | run:281 | MATCH 90/100 - applying to Node Js Developer @ Shipmozo
+2026-11-23 12:24:47,805 | DEBUG   | database.db                  | record_application:201 | Recorded PREPARED_NOT_SUBMITTED for Node Js Developer @ Shipmozo
+2026-11-23 12:24:47,805 | INFO    | main                         | run:319 | PREPARED_NOT_SUBMITTED: Node Js Developer @ Shipmozo
+2026-11-23 12:24:50,475 | INFO    | main                         | run:238 | Blocked (title contains blocked keyword 'php'): PHP and Laravel Developer @ Shipmozo
+2026-11-23 12:24:50,481 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_BLOCKED for PHP and Laravel Developer @ Shipmozo
+2026-11-23 12:24:52,979 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Front End Engineer @ EY | exp=2.0
+2026-11-23 12:24:52,989 | INFO    | main                         | run:281 | MATCH 90/100 - applying to Front End Engineer @ EY
+2026-11-23 12:24:53,006 | DEBUG   | database.db                  | record_application:201 | Recorded PREPARED_NOT_SUBMITTED for Front End Engineer @ EY
+2026-11-23 12:24:53,006 | INFO    | main                         | run:319 | PREPARED_NOT_SUBMITTED: Front End Engineer @ EY
+2026-11-23 12:25:00,507 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Urgent requirement For Angular developer (immediate joiners) @ Clover Infotech | exp=2.0
+2026-11-23 12:25:00,515 | INFO    | main                         | run:281 | MATCH 83/100 - applying to Urgent requirement For Angular developer (immediate joiners) @ Clover Infotech
+2026-11-23 12:25:00,530 | DEBUG   | database.db                  | record_application:201 | Recorded PREPARED_NOT_SUBMITTED for Urgent requirement For Angular developer (immediate joiners) @ Clover Infotech
+2026-11-23 12:25:00,530 | INFO    | main                         | run:319 | PREPARED_NOT_SUBMITTED: Urgent requirement For Angular developer (immediate joiners) @ Clover Infotech
+2026-11-23 12:25:06,939 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Data Developer @ Axa Xl | exp=2.0
+2026-11-23 12:25:06,948 | INFO    | main                         | run:274 | Score 50 < 60, skipping: Data Developer @ Axa Xl
+2026-11-23 12:25:06,955 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Data Developer @ Axa Xl
+2026-11-23 12:25:08,366 | INFO    | main                         | run:213 | Reached MAX_JOBS_TO_PROCESS for naukri
+2026-11-23 12:25:12,474 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:25:12,476 | INFO    | services.exporter            | export_session:76 | Exported 5 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_122512.csv
+2026-11-23 12:25:12,492 | INFO    | main                         | main:388 | Finished in 0.7 minutes
+2026-11-23 12:26:08,568 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:26:08,744 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:26:08,756 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=False | min_score=60 | max_apps=3
+2026-11-23 12:26:08,756 | WARNING | main                         | run:145 | AUTO_SUBMIT is OFF - forms are filled and validated but never sent
+2026-11-23 12:26:09,490 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:26:09,513 | INFO    | automation.authentication    | load_cookies:116 | Loaded 18 cookies from naukri_cookies.json
+2026-11-23 12:26:17,932 | INFO    | automation.authentication    | is_naukri_logged_in:177 | Naukri landed on: https://www.naukri.com/mnjuser/homepage
+2026-11-23 12:26:17,933 | INFO    | automation.authentication    | ensure_logged_in:234 | naukri session is active
+2026-11-23 12:26:17,933 | INFO    | automation.naukri            | search:198 | Naukri page 1 | 'React.js Developer' in 'Gurugram, Haryana, India'
+2026-11-23 12:26:21,208 | INFO    | automation.naukri            | search:217 | Found 20 Naukri cards
+2026-11-23 12:26:24,994 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Node Js Developer @ Shipmozo | exp=1.0
+2026-11-23 12:26:25,926 | INFO    | main                         | run:281 | MATCH 90/100 - applying to Node Js Developer @ Shipmozo
+2026-11-23 12:26:26,059 | DEBUG   | database.db                  | record_application:201 | Recorded PREPARED_NOT_SUBMITTED for Node Js Developer @ Shipmozo
+2026-11-23 12:26:26,060 | INFO    | main                         | run:319 | PREPARED_NOT_SUBMITTED: Node Js Developer @ Shipmozo
+2026-11-23 12:26:27,265 | INFO    | main                         | run:231 | Duplicate (SKIPPED_BLOCKED): PHP and Laravel Developer @ Shipmozo
+2026-11-23 12:26:28,936 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Front End Engineer @ EY | exp=2.0
+2026-11-23 12:26:29,173 | INFO    | main                         | run:281 | MATCH 90/100 - applying to Front End Engineer @ EY
+2026-11-23 12:26:29,189 | DEBUG   | database.db                  | record_application:201 | Recorded PREPARED_NOT_SUBMITTED for Front End Engineer @ EY
+2026-11-23 12:26:29,189 | INFO    | main                         | run:319 | PREPARED_NOT_SUBMITTED: Front End Engineer @ EY
+2026-11-23 12:26:32,043 | INFO    | main                         | run:238 | Blocked (title contains blocked keyword 'angular'): Urgent requirement For Angular developer (immediate joiners) @ Clover Infotech
+2026-11-23 12:26:32,159 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_BLOCKED for Urgent requirement For Angular developer (immediate joiners) @ Clover Infotech
+2026-11-23 12:26:32,159 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Data Developer @ Axa Xl
+2026-11-23 12:26:33,853 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: LLM Model Developer @ Accenture | exp=2.0
+2026-11-23 12:26:34,316 | INFO    | main                         | run:274 | Score 50 < 60, skipping: LLM Model Developer @ Accenture
+2026-11-23 12:26:34,323 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for LLM Model Developer @ Accenture
+2026-11-23 12:26:35,740 | INFO    | main                         | run:213 | Reached MAX_JOBS_TO_PROCESS for naukri
+2026-11-23 12:26:40,811 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:26:40,812 | INFO    | services.exporter            | export_session:76 | Exported 4 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_122640.csv
+2026-11-23 12:26:40,839 | INFO    | main                         | main:388 | Finished in 0.5 minutes
+2026-11-23 12:27:42,632 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:27:42,793 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:27:42,804 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=True | min_score=60 | max_apps=50
+2026-11-23 12:27:43,544 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:27:43,555 | INFO    | automation.authentication    | load_cookies:116 | Loaded 18 cookies from naukri_cookies.json
+2026-11-23 12:27:51,973 | INFO    | automation.authentication    | is_naukri_logged_in:177 | Naukri landed on: https://www.naukri.com/mnjuser/homepage
+2026-11-23 12:27:51,974 | INFO    | automation.authentication    | ensure_logged_in:234 | naukri session is active
+2026-11-23 12:27:51,976 | INFO    | automation.naukri            | search:198 | Naukri page 1 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 12:27:56,046 | INFO    | automation.naukri            | search:217 | Found 20 Naukri cards
+2026-11-23 12:27:59,169 | INFO    | automation.naukri            | search:198 | Naukri page 2 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 12:28:03,943 | INFO    | automation.naukri            | search:217 | Found 20 Naukri cards
+2026-11-23 12:28:08,798 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Node Js Developer @ Shipmozo | exp=1.0
+2026-11-23 12:28:08,812 | INFO    | main                         | run:281 | MATCH 90/100 - applying to Node Js Developer @ Shipmozo
+2026-11-23 12:28:11,095 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Node Js Developer @ Shipmozo
+2026-11-23 12:28:11,096 | INFO    | main                         | run:319 | NEEDS_HUMAN: Node Js Developer @ Shipmozo
+2026-11-23 12:28:21,137 | INFO    | main                         | run:231 | Duplicate (SKIPPED_BLOCKED): PHP and Laravel Developer @ Shipmozo
+2026-11-23 12:28:21,138 | INFO    | main                         | run:238 | Blocked (title contains blocked keyword 'intern'): international Adobe cs + upselling voice calling. @ Teleperformance (TP)
+2026-11-23 12:28:21,146 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_BLOCKED for international Adobe cs + upselling voice calling. @ Teleperformance (TP)
+2026-11-23 12:28:22,687 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Generative AI Engineer @ Easemytrip | exp=1.0
+2026-11-23 12:28:22,706 | INFO    | main                         | run:274 | Score 45 < 60, skipping: Generative AI Engineer @ Easemytrip
+2026-11-23 12:28:22,717 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Generative AI Engineer @ Easemytrip
+2026-11-23 12:28:25,730 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Associate Fullstack Developer @ Bain | exp=1.0
+2026-11-23 12:28:25,744 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Associate Fullstack Developer @ Bain
+2026-11-23 12:28:42,086 | WARNING | automation.naukri            | _answer_chat_step:436 | Naukri chatbot asked something unsupported: Thank you for your responses.
+2026-11-23 12:28:42,092 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Associate Fullstack Developer @ Bain
+2026-11-23 12:28:42,097 | INFO    | main                         | run:319 | NEEDS_HUMAN: Associate Fullstack Developer @ Bain
+2026-11-23 12:28:50,397 | INFO    | main                         | run:231 | Duplicate (SKIPPED_BLOCKED): Urgent requirement For Angular developer (immediate joiners) @ Clover Infotech
+2026-11-23 12:28:50,397 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Data Developer @ Axa Xl
+2026-11-23 12:28:50,397 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): LLM Model Developer @ Accenture
+2026-11-23 12:28:51,717 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Chief Technology Officer / Vice President - Full Stack Development @ Benovymed Healthcare | exp=2.0
+2026-11-23 12:28:51,741 | INFO    | main                         | run:281 | MATCH 75/100 - applying to Chief Technology Officer / Vice President - Full Stack Development @ Benovymed Healthcare
+2026-11-23 12:28:54,426 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Chief Technology Officer / Vice President - Full Stack Development @ Benovymed Healthcare
+2026-11-23 12:28:54,426 | INFO    | main                         | run:319 | NEEDS_HUMAN: Chief Technology Officer / Vice President - Full Stack Development @ Benovymed Healthcare
+2026-11-23 12:29:08,356 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare | exp=2.0
+2026-11-23 12:29:09,636 | INFO    | main                         | run:281 | MATCH 75/100 - applying to Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare
+2026-11-23 12:29:12,703 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare
+2026-11-23 12:29:12,704 | INFO    | main                         | run:319 | NEEDS_HUMAN: Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare
+2026-11-23 12:29:25,657 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Senior Software Engineer - 3D Visualization @ Medtech | exp=0.0
+2026-11-23 12:29:26,997 | INFO    | main                         | run:281 | MATCH 83/100 - applying to Senior Software Engineer - 3D Visualization @ Medtech
+2026-11-23 12:29:38,299 | WARNING | automation.naukri            | _answer_chat_step:469 | Could not type chatbot answer: Locator.click: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div[class*='chatbot_DrawerContentWrapper']").first.locator("div[contenteditable='true'], textarea, input[type='text']").first
+    - locator resolved to <div class="textArea" contenteditable="true" id="userInput__71zks30gwInputBox" data-placeholder="Type message here..."></div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 500ms
+
+2026-11-23 12:29:38,688 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Senior Software Engineer - 3D Visualization @ Medtech
+2026-11-23 12:29:38,715 | INFO    | main                         | run:319 | NEEDS_HUMAN: Senior Software Engineer - 3D Visualization @ Medtech
+2026-11-23 12:29:52,929 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: MERN STACK Developer @ Altbig | exp=1.0
+2026-11-23 12:29:53,808 | INFO    | main                         | run:281 | MATCH 90/100 - applying to MERN STACK Developer @ Altbig
+2026-11-23 12:29:57,369 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for MERN STACK Developer @ Altbig
+2026-11-23 12:29:57,369 | INFO    | main                         | run:319 | NEEDS_HUMAN: MERN STACK Developer @ Altbig
+2026-11-23 12:30:11,641 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Marketing Automation & CRM Executive @ Thinkstartup Learning | exp=1.0
+2026-11-23 12:30:11,714 | INFO    | main                         | run:274 | Score 58 < 60, skipping: Marketing Automation & CRM Executive @ Thinkstartup Learning
+2026-11-23 12:30:11,725 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Marketing Automation & CRM Executive @ Thinkstartup Learning
+2026-11-23 12:30:15,552 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: TD Sourcer Professional @ Mongodb | exp=2.0
+2026-11-23 12:30:15,671 | INFO    | main                         | run:274 | Score 42 < 60, skipping: TD Sourcer Professional @ Mongodb
+2026-11-23 12:30:15,675 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for TD Sourcer Professional @ Mongodb
+2026-11-23 12:30:18,891 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Software Development Engineer in Test I @ GreyOrange | exp=1.0
+2026-11-23 12:30:18,949 | INFO    | main                         | run:274 | Score 57 < 60, skipping: Software Development Engineer in Test I @ GreyOrange
+2026-11-23 12:30:18,956 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Software Development Engineer in Test I @ GreyOrange
+2026-11-23 12:30:22,211 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Senior Full Stack Developer @ Bitssens Technologies | exp=2.0
+2026-11-23 12:30:22,562 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Senior Full Stack Developer @ Bitssens Technologies
+2026-11-23 12:30:24,907 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Senior Full Stack Developer @ Bitssens Technologies
+2026-11-23 12:30:24,908 | INFO    | main                         | run:319 | NEEDS_HUMAN: Senior Full Stack Developer @ Bitssens Technologies
+2026-11-23 12:30:39,047 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Associate-Digital Content Producer-Policy @ EY | exp=0.0
+2026-11-23 12:30:39,084 | INFO    | main                         | run:274 | Score 55 < 60, skipping: Associate-Digital Content Producer-Policy @ EY
+2026-11-23 12:30:39,090 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Associate-Digital Content Producer-Policy @ EY
+2026-11-23 12:30:42,159 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Database Administrator @ MakeMyTrip | exp=2.0
+2026-11-23 12:30:42,637 | INFO    | main                         | run:274 | Score 42 < 60, skipping: Database Administrator @ MakeMyTrip
+2026-11-23 12:30:42,644 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Database Administrator @ MakeMyTrip
+2026-11-23 12:30:45,380 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Infra Tech Support Practitioner @ Accenture | exp=1.0
+2026-11-23 12:30:45,591 | INFO    | main                         | run:274 | Score 38 < 60, skipping: Infra Tech Support Practitioner @ Accenture
+2026-11-23 12:30:45,597 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Infra Tech Support Practitioner @ Accenture
+2026-11-23 12:30:48,527 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: AEM Content Author @ WPP Production | exp=2.0
+2026-11-23 12:30:48,536 | INFO    | main                         | run:274 | Score 48 < 60, skipping: AEM Content Author @ WPP Production
+2026-11-23 12:30:48,543 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for AEM Content Author @ WPP Production
+2026-11-23 12:30:52,777 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Developer @ Comviva | exp=1.0
+2026-11-23 12:30:52,794 | INFO    | main                         | run:281 | MATCH 78/100 - applying to Frontend Developer @ Comviva
+2026-11-23 12:30:52,813 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Frontend Developer @ Comviva
+2026-11-23 12:30:52,813 | INFO    | main                         | run:319 | NEEDS_HUMAN: Frontend Developer @ Comviva
+2026-11-23 12:31:07,231 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Web Developer @ Servicensure Technologies | exp=1.0
+2026-11-23 12:31:07,294 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Frontend Web Developer @ Servicensure Technologies
+2026-11-23 12:31:07,440 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_123107_failed_110626504842.png
+2026-11-23 12:31:07,447 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Web Developer @ Servicensure Technologies
+2026-11-23 12:31:07,447 | INFO    | main                         | run:319 | FAILED: Frontend Web Developer @ Servicensure Technologies
+2026-11-23 12:31:18,968 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: AEM Front End Developer + React @ Krazy Mantra It | exp=1.0
+2026-11-23 12:31:18,974 | INFO    | main                         | run:281 | MATCH 90/100 - applying to AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 12:31:19,081 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_123118_failed_220425503016.png
+2026-11-23 12:31:19,091 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 12:31:19,091 | INFO    | main                         | run:319 | FAILED: AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 12:31:32,685 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Software Developer @ Easemytrip | exp=3.0
+2026-11-23 12:31:32,697 | INFO    | main                         | run:281 | MATCH 78/100 - applying to Frontend Software Developer @ Easemytrip
+2026-11-23 12:31:32,786 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_123132_failed_220424001785.png
+2026-11-23 12:31:32,792 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Software Developer @ Easemytrip
+2026-11-23 12:31:32,792 | INFO    | main                         | run:319 | FAILED: Frontend Software Developer @ Easemytrip
+2026-11-23 12:31:41,720 | ERROR   | main                         | run:217 | 3 consecutive failures - stopping to avoid hammering the site
+2026-11-23 12:31:57,550 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:31:57,563 | INFO    | services.exporter            | export_session:76 | Exported 20 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_123157.csv
+2026-11-23 12:31:57,583 | INFO    | main                         | main:388 | Finished in 4.3 minutes
+2026-11-23 12:37:49,367 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:37:49,932 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:37:49,943 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=True | min_score=60 | max_apps=50
+2026-11-23 12:37:52,434 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:37:52,458 | INFO    | automation.authentication    | load_cookies:116 | Loaded 18 cookies from naukri_cookies.json
+2026-11-23 12:38:00,932 | INFO    | automation.authentication    | is_naukri_logged_in:177 | Naukri landed on: https://www.naukri.com/mnjuser/homepage
+2026-11-23 12:38:00,934 | INFO    | automation.authentication    | ensure_logged_in:234 | naukri session is active
+2026-11-23 12:38:00,934 | INFO    | automation.naukri            | search:198 | Naukri page 1 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 12:38:05,452 | INFO    | automation.naukri            | search:217 | Found 20 Naukri cards
+2026-11-23 12:38:08,401 | INFO    | automation.naukri            | search:198 | Naukri page 2 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 12:38:14,138 | INFO    | automation.naukri            | search:217 | Found 20 Naukri cards
+2026-11-23 12:38:16,785 | INFO    | main                         | run:231 | Duplicate (SKIPPED_BLOCKED): PHP and Laravel Developer @ Shipmozo
+2026-11-23 12:38:16,786 | INFO    | main                         | run:231 | Duplicate (SKIPPED_BLOCKED): international Adobe cs + upselling voice calling. @ Teleperformance (TP)
+2026-11-23 12:38:16,786 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Generative AI Engineer @ Easemytrip
+2026-11-23 12:38:16,786 | INFO    | main                         | run:231 | Duplicate (SKIPPED_BLOCKED): Urgent requirement For Angular developer (immediate joiners) @ Clover Infotech
+2026-11-23 12:38:16,787 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Data Developer @ Axa Xl
+2026-11-23 12:38:16,787 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): LLM Model Developer @ Accenture
+2026-11-23 12:38:16,788 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Marketing Automation & CRM Executive @ Thinkstartup Learning
+2026-11-23 12:38:16,788 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): TD Sourcer Professional @ Mongodb
+2026-11-23 12:38:16,789 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Software Development Engineer in Test I @ GreyOrange
+2026-11-23 12:38:18,842 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Senior Full Stack Developer @ Bitssens Technologies | exp=2.0
+2026-11-23 12:38:18,991 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Senior Full Stack Developer @ Bitssens Technologies
+2026-11-23 12:39:14,074 | WARNING | automation.naukri            | _answer_chat_step:436 | Naukri chatbot asked something unsupported: Do you have more than 2 years of experience in Reactjs?
+2026-11-23 12:39:14,085 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Senior Full Stack Developer @ Bitssens Technologies
+2026-11-23 12:39:14,086 | INFO    | main                         | run:319 | NEEDS_HUMAN: Senior Full Stack Developer @ Bitssens Technologies
+2026-11-23 12:39:26,777 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Associate-Digital Content Producer-Policy @ EY
+2026-11-23 12:39:26,777 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Database Administrator @ MakeMyTrip
+2026-11-23 12:39:26,778 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Infra Tech Support Practitioner @ Accenture
+2026-11-23 12:39:26,870 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): AEM Content Author @ WPP Production
+2026-11-23 12:39:28,810 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Custom Software Engineer @ Accenture | exp=2.0
+2026-11-23 12:39:29,204 | INFO    | main                         | run:281 | MATCH 67/100 - applying to Custom Software Engineer @ Accenture
+2026-11-23 12:39:29,230 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Custom Software Engineer @ Accenture
+2026-11-23 12:39:29,230 | INFO    | main                         | run:319 | NEEDS_HUMAN: Custom Software Engineer @ Accenture
+2026-11-23 12:39:41,841 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Custom Software Engineer @ Accenture | exp=2.0
+2026-11-23 12:39:41,877 | INFO    | main                         | run:281 | MATCH 67/100 - applying to Custom Software Engineer @ Accenture
+2026-11-23 12:39:41,893 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Custom Software Engineer @ Accenture
+2026-11-23 12:39:41,893 | INFO    | main                         | run:319 | NEEDS_HUMAN: Custom Software Engineer @ Accenture
+2026-11-23 12:39:54,267 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Web Developer @ Team Vertex Global Services | exp=1.0
+2026-11-23 12:39:54,657 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Web Developer @ Team Vertex Global Services
+2026-11-23 12:39:57,874 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Web Developer @ Team Vertex Global Services
+2026-11-23 12:39:57,875 | INFO    | main                         | run:319 | NEEDS_HUMAN: Web Developer @ Team Vertex Global Services
+2026-11-23 12:40:09,424 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Sr. Cloud Engineer @ AXA Global Business Services | exp=2.0
+2026-11-23 12:40:09,583 | INFO    | main                         | run:281 | MATCH 63/100 - applying to Sr. Cloud Engineer @ AXA Global Business Services
+2026-11-23 12:40:11,603 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Sr. Cloud Engineer @ AXA Global Business Services
+2026-11-23 12:40:11,603 | INFO    | main                         | run:319 | NEEDS_HUMAN: Sr. Cloud Engineer @ AXA Global Business Services
+2026-11-23 12:40:26,159 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Software Development Engineer in Test I @ GreyOrange | exp=1.0
+2026-11-23 12:40:26,172 | INFO    | main                         | run:281 | MATCH 60/100 - applying to Software Development Engineer in Test I @ GreyOrange
+2026-11-23 12:40:33,981 | WARNING | automation.naukri            | _answer_chat_step:436 | Naukri chatbot asked something unsupported: Thank you for your responses.
+2026-11-23 12:40:33,988 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Software Development Engineer in Test I @ GreyOrange
+2026-11-23 12:40:33,993 | INFO    | main                         | run:319 | NEEDS_HUMAN: Software Development Engineer in Test I @ GreyOrange
+2026-11-23 12:40:46,267 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Cloudera Developer @ Allime Tech Solutions | exp=2.0
+2026-11-23 12:40:46,278 | INFO    | main                         | run:274 | Score 53 < 60, skipping: Cloudera Developer @ Allime Tech Solutions
+2026-11-23 12:40:46,285 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Cloudera Developer @ Allime Tech Solutions
+2026-11-23 12:40:50,049 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Developer @ Comviva | exp=1.0
+2026-11-23 12:40:50,061 | INFO    | main                         | run:281 | MATCH 78/100 - applying to Frontend Developer @ Comviva
+2026-11-23 12:40:50,077 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Frontend Developer @ Comviva
+2026-11-23 12:40:50,077 | INFO    | main                         | run:319 | NEEDS_HUMAN: Frontend Developer @ Comviva
+2026-11-23 12:41:04,508 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Web Developer @ Servicensure Technologies | exp=1.0
+2026-11-23 12:41:04,519 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Frontend Web Developer @ Servicensure Technologies
+2026-11-23 12:41:06,373 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_124104_failed_110626504842.png
+2026-11-23 12:41:06,381 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Web Developer @ Servicensure Technologies
+2026-11-23 12:41:06,381 | INFO    | main                         | run:319 | FAILED: Frontend Web Developer @ Servicensure Technologies
+2026-11-23 12:41:20,150 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: AEM Front End Developer + React @ Krazy Mantra It | exp=1.0
+2026-11-23 12:41:20,494 | INFO    | main                         | run:281 | MATCH 90/100 - applying to AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 12:41:20,653 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_124120_failed_220425503016.png
+2026-11-23 12:41:20,721 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 12:41:20,721 | INFO    | main                         | run:319 | FAILED: AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 12:41:31,672 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Software Developer @ Easemytrip | exp=3.0
+2026-11-23 12:41:31,696 | INFO    | main                         | run:281 | MATCH 78/100 - applying to Frontend Software Developer @ Easemytrip
+2026-11-23 12:41:32,691 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_124131_failed_220424001785.png
+2026-11-23 12:41:32,734 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Software Developer @ Easemytrip
+2026-11-23 12:41:32,735 | INFO    | main                         | run:319 | FAILED: Frontend Software Developer @ Easemytrip
+2026-11-23 12:41:44,957 | ERROR   | main                         | run:217 | 3 consecutive failures - stopping to avoid hammering the site
+2026-11-23 12:42:04,821 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:42:04,825 | INFO    | services.exporter            | export_session:76 | Exported 11 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_124204.csv
+2026-11-23 12:42:04,844 | INFO    | main                         | main:388 | Finished in 4.3 minutes
+2026-11-23 12:45:05,605 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:45:05,924 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:45:05,940 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=True | min_score=60 | max_apps=100
+2026-11-23 12:45:08,185 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:45:08,204 | INFO    | automation.authentication    | load_cookies:116 | Loaded 18 cookies from naukri_cookies.json
+2026-11-23 12:45:16,622 | INFO    | automation.authentication    | is_naukri_logged_in:177 | Naukri landed on: https://www.naukri.com/mnjuser/homepage
+2026-11-23 12:45:16,623 | INFO    | automation.authentication    | ensure_logged_in:234 | naukri session is active
+2026-11-23 12:45:16,624 | INFO    | automation.naukri            | search:198 | Naukri page 1 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 12:45:20,370 | INFO    | automation.naukri            | search:217 | Found 20 Naukri cards
+2026-11-23 12:45:22,387 | INFO    | automation.naukri            | search:198 | Naukri page 2 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 12:45:26,812 | INFO    | automation.naukri            | search:217 | Found 20 Naukri cards
+2026-11-23 12:45:30,180 | INFO    | main                         | run:231 | Duplicate (SKIPPED_BLOCKED): international Adobe cs + upselling voice calling. @ Teleperformance (TP)
+2026-11-23 12:45:30,181 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Generative AI Engineer @ Easemytrip
+2026-11-23 12:45:30,182 | INFO    | main                         | run:231 | Duplicate (SKIPPED_BLOCKED): Urgent requirement For Angular developer (immediate joiners) @ Clover Infotech
+2026-11-23 12:45:30,183 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Data Developer @ Axa Xl
+2026-11-23 12:45:30,183 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): LLM Model Developer @ Accenture
+2026-11-23 12:45:30,184 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Marketing Automation & CRM Executive @ Thinkstartup Learning
+2026-11-23 12:45:30,185 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): TD Sourcer Professional @ Mongodb
+2026-11-23 12:45:30,186 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Software Development Engineer in Test I @ GreyOrange
+2026-11-23 12:45:30,187 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Associate-Digital Content Producer-Policy @ EY
+2026-11-23 12:45:30,188 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Database Administrator @ MakeMyTrip
+2026-11-23 12:45:30,189 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Infra Tech Support Practitioner @ Accenture
+2026-11-23 12:45:30,191 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): AEM Content Author @ WPP Production
+2026-11-23 12:45:31,742 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Custom Software Engineer @ Accenture | exp=2.0
+2026-11-23 12:45:32,465 | INFO    | main                         | run:281 | MATCH 67/100 - applying to Custom Software Engineer @ Accenture
+2026-11-23 12:45:32,498 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Custom Software Engineer @ Accenture
+2026-11-23 12:45:32,498 | INFO    | main                         | run:319 | NEEDS_HUMAN: Custom Software Engineer @ Accenture
+2026-11-23 12:45:45,043 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Custom Software Engineer @ Accenture | exp=2.0
+2026-11-23 12:45:45,053 | INFO    | main                         | run:281 | MATCH 67/100 - applying to Custom Software Engineer @ Accenture
+2026-11-23 12:45:45,095 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Custom Software Engineer @ Accenture
+2026-11-23 12:45:45,095 | INFO    | main                         | run:319 | NEEDS_HUMAN: Custom Software Engineer @ Accenture
+2026-11-23 12:45:55,201 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Cloudera Developer @ Allime Tech Solutions
+2026-11-23 12:45:57,048 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Tech & Digital-Software Engineer-Full Stack @ Hdfc Bank | exp=2.0
+2026-11-23 12:45:57,106 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Tech & Digital-Software Engineer-Full Stack @ Hdfc Bank
+2026-11-23 12:45:57,125 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Tech & Digital-Software Engineer-Full Stack @ Hdfc Bank
+2026-11-23 12:45:57,125 | INFO    | main                         | run:319 | NEEDS_HUMAN: Tech & Digital-Software Engineer-Full Stack @ Hdfc Bank
+2026-11-23 12:46:12,073 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Web Operations Specialist @ Agilent Technologies | exp=2.0
+2026-11-23 12:46:12,136 | INFO    | main                         | run:281 | MATCH 62/100 - applying to Web Operations Specialist @ Agilent Technologies
+2026-11-23 12:46:12,155 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Web Operations Specialist @ Agilent Technologies
+2026-11-23 12:46:12,156 | INFO    | main                         | run:319 | NEEDS_HUMAN: Web Operations Specialist @ Agilent Technologies
+2026-11-23 12:46:23,076 | INFO    | main                         | run:238 | Blocked (title contains blocked keyword 'manager'): Regional Credit Manager - Developer Finance - Developer Finance @ Tata Capital
+2026-11-23 12:46:23,084 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_BLOCKED for Regional Credit Manager - Developer Finance - Developer Finance @ Tata Capital
+2026-11-23 12:46:25,201 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Associate Product Consultant @ Cvent | exp=2.0
+2026-11-23 12:46:25,214 | INFO    | main                         | run:274 | Score 55 < 60, skipping: Associate Product Consultant @ Cvent
+2026-11-23 12:46:25,223 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Associate Product Consultant @ Cvent
+2026-11-23 12:46:28,617 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Product Solutions Engineer (US Shift) @ Loop Subscriptions | exp=2.0
+2026-11-23 12:46:28,632 | INFO    | main                         | run:281 | MATCH 70/100 - applying to Product Solutions Engineer (US Shift) @ Loop Subscriptions
+2026-11-23 12:46:28,654 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Product Solutions Engineer (US Shift) @ Loop Subscriptions
+2026-11-23 12:46:28,654 | INFO    | main                         | run:319 | NEEDS_HUMAN: Product Solutions Engineer (US Shift) @ Loop Subscriptions
+2026-11-23 12:46:42,495 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Developer @ Comviva | exp=1.0
+2026-11-23 12:46:42,507 | INFO    | main                         | run:281 | MATCH 78/100 - applying to Frontend Developer @ Comviva
+2026-11-23 12:46:42,529 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Frontend Developer @ Comviva
+2026-11-23 12:46:42,530 | INFO    | main                         | run:319 | NEEDS_HUMAN: Frontend Developer @ Comviva
+2026-11-23 12:46:53,855 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Web Developer @ Servicensure Technologies | exp=1.0
+2026-11-23 12:46:53,864 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Frontend Web Developer @ Servicensure Technologies
+2026-11-23 12:46:54,391 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_124653_failed_110626504842.png
+2026-11-23 12:46:54,400 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Web Developer @ Servicensure Technologies
+2026-11-23 12:46:54,401 | INFO    | main                         | run:319 | FAILED: Frontend Web Developer @ Servicensure Technologies
+2026-11-23 12:47:07,639 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: AEM Front End Developer + React @ Krazy Mantra It | exp=1.0
+2026-11-23 12:47:07,649 | INFO    | main                         | run:281 | MATCH 90/100 - applying to AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 12:47:08,950 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_124707_failed_220425503016.png
+2026-11-23 12:47:08,959 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 12:47:08,959 | INFO    | main                         | run:319 | FAILED: AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 12:47:22,952 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Software Developer @ Easemytrip | exp=3.0
+2026-11-23 12:47:22,965 | INFO    | main                         | run:281 | MATCH 78/100 - applying to Frontend Software Developer @ Easemytrip
+2026-11-23 12:47:24,669 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_124722_failed_220424001785.png
+2026-11-23 12:47:24,678 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Software Developer @ Easemytrip
+2026-11-23 12:47:24,678 | INFO    | main                         | run:319 | FAILED: Frontend Software Developer @ Easemytrip
+2026-11-23 12:47:35,751 | ERROR   | main                         | run:217 | 3 consecutive failures - stopping to avoid hammering the site
+2026-11-23 12:47:54,335 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:47:54,338 | INFO    | services.exporter            | export_session:76 | Exported 11 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_124754.csv
+2026-11-23 12:47:54,371 | INFO    | main                         | main:388 | Finished in 2.8 minutes
+2026-11-23 12:53:19,215 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:53:19,423 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:53:19,445 | INFO    | main                         | run:139 | Session start | platforms=linkedin | auto_submit=False | min_score=60 | max_apps=3
+2026-11-23 12:53:19,445 | WARNING | main                         | run:145 | AUTO_SUBMIT is OFF - forms are filled and validated but never sent
+2026-11-23 12:53:20,786 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:53:20,809 | INFO    | automation.authentication    | load_cookies:116 | Loaded 23 cookies from linkedin_cookies.json
+2026-11-23 12:54:00,437 | ERROR   | main                         | run:170 | linkedin: Still not signed in to linkedin - aborting this run.
+2026-11-23 12:54:01,115 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:54:01,115 | INFO    | services.exporter            | export_session:71 | Nothing to export - no jobs were processed
+2026-11-23 12:54:01,169 | INFO    | main                         | main:388 | Finished in 0.7 minutes
+2026-11-23 12:54:08,967 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:54:09,132 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:54:09,226 | INFO    | main                         | run:139 | Session start | platforms=linkedin | auto_submit=False | min_score=60 | max_apps=3
+2026-11-23 12:54:09,227 | WARNING | main                         | run:145 | AUTO_SUBMIT is OFF - forms are filled and validated but never sent
+2026-11-23 12:54:11,307 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:54:11,671 | INFO    | automation.authentication    | load_cookies:116 | Loaded 23 cookies from linkedin_cookies.json
+2026-11-23 12:54:38,371 | ERROR   | main                         | run:170 | linkedin: Still not signed in to linkedin - aborting this run.
+2026-11-23 12:54:40,081 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:54:40,081 | INFO    | services.exporter            | export_session:71 | Nothing to export - no jobs were processed
+2026-11-23 12:54:40,124 | INFO    | main                         | main:388 | Finished in 0.5 minutes
+2026-11-23 12:54:45,488 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:54:45,689 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:54:45,701 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=True | min_score=60 | max_apps=100
+2026-11-23 12:54:46,744 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:54:46,844 | INFO    | automation.authentication    | load_cookies:116 | Loaded 18 cookies from naukri_cookies.json
+2026-11-23 12:54:49,423 | ERROR   | main                         | run:332 | Browser error: Page.wait_for_load_state: Target page, context or browser has been closed
+=========================== logs ===========================
+  "load" event fired
+============================================================
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 163, in run
+    ensure_logged_in(
+    ~~~~~~~~~~~~~~~~^
+        page,
+        ^^^^^
+    ...<2 lines>...
+        cookies_path=cookies_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\auto_job\automation\authentication.py", line 233, in ensure_logged_in
+    if checker(page):
+       ~~~~~~~^^^^^^
+  File "C:\Users\HP\Desktop\auto_job\automation\authentication.py", line 172, in is_naukri_logged_in
+    page.wait_for_load_state("networkidle", timeout=8000)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 21329, in wait_for_load_state
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.wait_for_load_state(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            state=state, timeout=to_milliseconds(timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 694, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(state=state, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 338, in wait_for_load_state
+    await waiter.wait_for_event(self._event_emitter, "loadstate", predicate)
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\waiter.py", line 201, in wait_for_promise
+    raise rewrite_error_message(
+        e, str(e) + format_log_recording(self._logs)
+    ) from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\waiter.py", line 184, in wait_for_promise
+    result = await race([promise, *self._failures])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\tasks.py", line 131, in race
+    return winner.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\waiter.py", line 253, in run
+    matched = predicate(event_arg)
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\waiter.py", line 146, in throw
+    raise error() if callable(error) else error
+playwright._impl._errors.TargetClosedError: Page.wait_for_load_state: Target page, context or browser has been closed
+=========================== logs ===========================
+  "load" event fired
+============================================================
+2026-11-23 12:54:49,615 | DEBUG   | automation.browser           | stop:85 | Shutdown step failed: BrowserContext.close: Target page, context or browser has been closed
+2026-11-23 12:54:50,183 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:54:50,184 | INFO    | services.exporter            | export_session:71 | Nothing to export - no jobs were processed
+2026-11-23 12:54:50,203 | INFO    | main                         | main:388 | Finished in 0.1 minutes
+2026-11-23 12:55:16,713 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:55:16,874 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:55:16,884 | INFO    | main                         | run:139 | Session start | platforms=linkedin | auto_submit=True | min_score=60 | max_apps=100
+2026-11-23 12:55:17,580 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:55:17,590 | INFO    | automation.authentication    | load_cookies:116 | Loaded 23 cookies from linkedin_cookies.json
+2026-11-23 12:55:47,008 | ERROR   | main                         | run:170 | linkedin: Still not signed in to linkedin - aborting this run.
+2026-11-23 12:55:47,430 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:55:47,431 | INFO    | services.exporter            | export_session:71 | Nothing to export - no jobs were processed
+2026-11-23 12:55:47,441 | INFO    | main                         | main:388 | Finished in 0.5 minutes
+2026-11-23 12:56:59,083 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:56:59,093 | INFO    | automation.authentication    | load_cookies:116 | Loaded 23 cookies from linkedin_cookies.json
+2026-11-23 12:57:01,836 | INFO    | automation.authentication    | is_linkedin_logged_in:158 | LinkedIn landed on: https://www.linkedin.com/feed/
+2026-11-23 12:57:02,218 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:57:07,368 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 12:57:07,541 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 12:57:07,652 | INFO    | main                         | run:139 | Session start | platforms=linkedin | auto_submit=False | min_score=60 | max_apps=3
+2026-11-23 12:57:07,652 | WARNING | main                         | run:145 | AUTO_SUBMIT is OFF - forms are filled and validated but never sent
+2026-11-23 12:57:08,646 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 12:57:08,662 | INFO    | automation.authentication    | load_cookies:116 | Loaded 23 cookies from linkedin_cookies.json
+2026-11-23 12:57:11,267 | INFO    | automation.authentication    | is_linkedin_logged_in:158 | LinkedIn landed on: https://www.linkedin.com/feed/
+2026-11-23 12:57:11,267 | INFO    | automation.authentication    | ensure_logged_in:276 | linkedin session is active
+2026-11-23 12:57:11,267 | INFO    | automation.job_search        | search:185 | Search page 1 | 'React.js Developer' in 'Gurugram, Haryana, India'
+2026-11-23 12:57:27,318 | INFO    | automation.job_search        | search:205 | Found 1 cards on page 1
+2026-11-23 12:57:47,718 | WARNING | automation.job_parser        | open:91 | Job 4491504128 never rendered a description
+2026-11-23 12:57:47,885 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Developer @ 
+2026-11-23 12:57:55,348 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 12:57:55,353 | INFO    | services.exporter            | export_session:76 | Exported 1 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_125755.csv
+2026-11-23 12:57:55,370 | INFO    | main                         | main:388 | Finished in 0.8 minutes
+2026-11-23 13:07:36,046 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 13:07:36,228 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 13:07:36,240 | INFO    | main                         | run:139 | Session start | platforms=linkedin | auto_submit=False | min_score=60 | max_apps=2
+2026-11-23 13:07:36,240 | WARNING | main                         | run:145 | AUTO_SUBMIT is OFF - forms are filled and validated but never sent
+2026-11-23 13:07:36,976 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 13:07:36,994 | INFO    | automation.authentication    | load_cookies:116 | Loaded 23 cookies from linkedin_cookies.json
+2026-11-23 13:07:39,501 | INFO    | automation.authentication    | is_linkedin_logged_in:158 | LinkedIn landed on: https://www.linkedin.com/feed/
+2026-11-23 13:07:39,501 | INFO    | automation.authentication    | ensure_logged_in:276 | linkedin session is active
+2026-11-23 13:07:39,501 | INFO    | automation.job_search        | search:272 | Search page 1 | 'React Developer' in 'India'
+2026-11-23 13:07:54,304 | INFO    | automation.job_search        | search:296 | Signed-in list yielded 1 card(s) - using the public listing endpoint
+2026-11-23 13:07:56,809 | INFO    | automation.job_search        | search:304 | Found 10 cards on page 1
+2026-11-23 13:08:06,177 | INFO    | automation.job_parser        | parse:251 | Parsed: React Developer @ Recro | Bengaluru, Karnataka, India | easy_apply=True | exp=3.0
+2026-11-23 13:08:06,213 | INFO    | main                         | run:281 | MATCH 100/100 - applying to React Developer @ Recro
+2026-11-23 13:08:09,731 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_130809_failed_4493596453.png
+2026-11-23 13:08:09,741 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for React Developer @ Recro
+2026-11-23 13:08:09,741 | INFO    | main                         | run:319 | FAILED: React Developer @ Recro
+2026-11-23 13:08:21,583 | INFO    | automation.job_parser        | parse:251 | Parsed: React JS Developer @ Recro | Bangalore Urban, Karnataka, India | easy_apply=True | exp=6.0
+2026-11-23 13:08:21,603 | INFO    | main                         | run:281 | MATCH 70/100 - applying to React JS Developer @ Recro
+2026-11-23 13:08:23,616 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_130823_failed_4493618081.png
+2026-11-23 13:08:23,872 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for React JS Developer @ Recro
+2026-11-23 13:08:23,873 | INFO    | main                         | run:319 | FAILED: React JS Developer @ Recro
+2026-11-23 13:08:34,003 | INFO    | automation.job_parser        | parse:251 | Parsed: React Developer @ Allime Tech Solutions | India | easy_apply=False | exp=0.0
+2026-11-23 13:08:34,010 | INFO    | main                         | run:261 | LinkedIn says already applied: React Developer @ Allime Tech Solutions
+2026-11-23 13:08:34,016 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_ALREADY_APPLIED for React Developer @ Allime Tech Solutions
+2026-11-23 13:08:39,317 | INFO    | automation.job_parser        | parse:251 | Parsed: Senior User Interface Engineer @ Allime Tech Solutions | Bengaluru, Karnataka, India | easy_apply=True | exp=5.0
+2026-11-23 13:08:39,349 | INFO    | main                         | run:281 | MATCH 75/100 - applying to Senior User Interface Engineer @ Allime Tech Solutions
+2026-11-23 13:08:41,468 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_130841_failed_4493724297.png
+2026-11-23 13:08:41,515 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Senior User Interface Engineer @ Allime Tech Solutions
+2026-11-23 13:08:41,517 | INFO    | main                         | run:319 | FAILED: Senior User Interface Engineer @ Allime Tech Solutions
+2026-11-23 13:08:47,609 | INFO    | main                         | run:213 | Reached MAX_JOBS_TO_PROCESS for linkedin
+2026-11-23 13:08:55,304 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 13:08:55,306 | INFO    | services.exporter            | export_session:76 | Exported 4 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_130855.csv
+2026-11-23 13:08:55,318 | INFO    | main                         | main:388 | Finished in 1.3 minutes
+2026-11-23 13:10:07,297 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 13:10:07,492 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 13:10:07,503 | INFO    | main                         | run:139 | Session start | platforms=linkedin | auto_submit=False | min_score=60 | max_apps=2
+2026-11-23 13:10:07,503 | WARNING | main                         | run:145 | AUTO_SUBMIT is OFF - forms are filled and validated but never sent
+2026-11-23 13:10:08,250 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 13:10:08,272 | INFO    | automation.authentication    | load_cookies:116 | Loaded 23 cookies from linkedin_cookies.json
+2026-11-23 13:10:11,155 | INFO    | automation.authentication    | is_linkedin_logged_in:158 | LinkedIn landed on: https://www.linkedin.com/feed/
+2026-11-23 13:10:11,155 | INFO    | automation.authentication    | ensure_logged_in:276 | linkedin session is active
+2026-11-23 13:10:11,156 | INFO    | automation.job_search        | search:272 | Search page 1 | 'React Developer' in 'India'
+2026-11-23 13:10:25,000 | INFO    | automation.job_search        | search:296 | Signed-in list yielded 1 card(s) - using the public listing endpoint
+2026-11-23 13:10:27,569 | INFO    | automation.job_search        | search:304 | Found 10 cards on page 1
+2026-11-23 13:10:35,674 | INFO    | automation.job_parser        | parse:251 | Parsed: React Developer @ Recro | Bengaluru, Karnataka, India | easy_apply=True | exp=3.0
+2026-11-23 13:10:35,804 | INFO    | main                         | run:281 | MATCH 100/100 - applying to React Developer @ Recro
+2026-11-23 13:10:38,347 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for React Developer @ Recro
+2026-11-23 13:10:38,430 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:10:38,979 | WARNING | services.question_handler    | ask_human:238 | Unknown question (non-interactive): Phone country code
+2026-11-23 13:10:38,980 | WARNING | automation.form_handler      | fill:349 | No supported answer for: Phone country code
+2026-11-23 13:10:38,990 | WARNING | automation.easy_apply        | apply:220 | Unanswerable question(s): Phone country code
+2026-11-23 13:10:40,789 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for React Developer @ Recro
+2026-11-23 13:10:40,795 | INFO    | main                         | run:319 | NEEDS_HUMAN: React Developer @ Recro
+2026-11-23 13:10:50,360 | INFO    | automation.job_parser        | parse:251 | Parsed: React JS Developer @ Recro | Bangalore Urban, Karnataka, India | easy_apply=True | exp=6.0
+2026-11-23 13:10:50,376 | INFO    | main                         | run:281 | MATCH 70/100 - applying to React JS Developer @ Recro
+2026-11-23 13:10:56,120 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for React JS Developer @ Recro
+2026-11-23 13:10:56,199 | DEBUG   | automation.form_handler      | discover:228 | Discovered 5 fields (5 labelled)
+2026-11-23 13:10:56,201 | WARNING | services.question_handler    | ask_human:238 | Unknown question (non-interactive): Phone country code
+2026-11-23 13:10:56,201 | WARNING | automation.form_handler      | fill:349 | No supported answer for: Phone country code
+2026-11-23 13:10:58,664 | WARNING | automation.easy_apply        | apply:220 | Unanswerable question(s): Phone country code
+2026-11-23 13:11:04,051 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for React JS Developer @ Recro
+2026-11-23 13:11:04,054 | INFO    | main                         | run:319 | NEEDS_HUMAN: React JS Developer @ Recro
+2026-11-23 13:11:09,916 | INFO    | main                         | run:231 | Duplicate (SKIPPED_ALREADY_APPLIED): React JS Developer @ Allime Tech Solutions
+2026-11-23 13:11:09,916 | INFO    | main                         | run:213 | Reached MAX_JOBS_TO_PROCESS for linkedin
+2026-11-23 13:11:16,462 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 13:11:16,463 | INFO    | services.exporter            | export_session:76 | Exported 2 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_131116.csv
+2026-11-23 13:11:16,480 | INFO    | main                         | main:388 | Finished in 1.2 minutes
+2026-11-23 13:11:41,714 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 13:11:41,878 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 13:11:41,902 | INFO    | main                         | run:139 | Session start | platforms=linkedin | auto_submit=False | min_score=60 | max_apps=2
+2026-11-23 13:11:41,902 | WARNING | main                         | run:145 | AUTO_SUBMIT is OFF - forms are filled and validated but never sent
+2026-11-23 13:11:42,724 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 13:11:42,745 | INFO    | automation.authentication    | load_cookies:116 | Loaded 23 cookies from linkedin_cookies.json
+2026-11-23 13:11:45,798 | INFO    | automation.authentication    | is_linkedin_logged_in:158 | LinkedIn landed on: https://www.linkedin.com/feed/
+2026-11-23 13:11:45,799 | INFO    | automation.authentication    | ensure_logged_in:276 | linkedin session is active
+2026-11-23 13:11:45,799 | INFO    | automation.job_search        | search:272 | Search page 1 | 'React Developer' in 'India'
+2026-11-23 13:11:59,118 | INFO    | automation.job_search        | search:296 | Signed-in list yielded 1 card(s) - using the public listing endpoint
+2026-11-23 13:12:01,873 | INFO    | automation.job_search        | search:304 | Found 10 cards on page 1
+2026-11-23 13:12:12,425 | INFO    | automation.job_parser        | parse:251 | Parsed: React Developer @ Recro | Bengaluru, Karnataka, India | easy_apply=True | exp=3.0
+2026-11-23 13:12:12,459 | INFO    | main                         | run:281 | MATCH 100/100 - applying to React Developer @ Recro
+2026-11-23 13:12:15,623 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for React Developer @ Recro
+2026-11-23 13:12:15,692 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:12:15,786 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:12:18,723 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 2 for React Developer @ Recro
+2026-11-23 13:12:19,013 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:12:19,015 | WARNING | services.question_handler    | ask_human:238 | Unknown question (non-interactive): Harshit_Resume.pdf
+2026-11-23 13:12:19,015 | WARNING | automation.form_handler      | fill:360 | No supported answer for: Harshit_Resume.pdf
+2026-11-23 13:12:19,015 | WARNING | automation.easy_apply        | apply:220 | Unanswerable question(s): Harshit_Resume.pdf
+2026-11-23 13:12:21,396 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for React Developer @ Recro
+2026-11-23 13:12:21,405 | INFO    | main                         | run:319 | NEEDS_HUMAN: React Developer @ Recro
+2026-11-23 13:12:30,110 | INFO    | automation.job_parser        | parse:251 | Parsed: React JS Developer @ Recro | Bangalore Urban, Karnataka, India | easy_apply=True | exp=6.0
+2026-11-23 13:12:30,130 | INFO    | main                         | run:281 | MATCH 70/100 - applying to React JS Developer @ Recro
+2026-11-23 13:12:32,147 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for React JS Developer @ Recro
+2026-11-23 13:12:32,169 | DEBUG   | automation.form_handler      | discover:228 | Discovered 0 fields (0 labelled)
+2026-11-23 13:12:32,195 | DEBUG   | automation.form_handler      | discover:228 | Discovered 0 fields (0 labelled)
+2026-11-23 13:12:35,068 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_131234_failed_4493618081.png
+2026-11-23 13:12:35,076 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for React JS Developer @ Recro
+2026-11-23 13:12:35,077 | INFO    | main                         | run:319 | FAILED: React JS Developer @ Recro
+2026-11-23 13:12:37,924 | INFO    | main                         | run:231 | Duplicate (SKIPPED_ALREADY_APPLIED): React JS Developer @ Allime Tech Solutions
+2026-11-23 13:12:37,924 | INFO    | main                         | run:213 | Reached MAX_JOBS_TO_PROCESS for linkedin
+2026-11-23 13:12:44,800 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 13:12:44,802 | INFO    | services.exporter            | export_session:76 | Exported 2 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_131244.csv
+2026-11-23 13:12:44,815 | INFO    | main                         | main:388 | Finished in 1.1 minutes
+2026-11-23 13:13:03,704 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 13:13:03,867 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 13:13:04,300 | INFO    | main                         | run:139 | Session start | platforms=linkedin | auto_submit=False | min_score=60 | max_apps=3
+2026-11-23 13:13:04,300 | WARNING | main                         | run:145 | AUTO_SUBMIT is OFF - forms are filled and validated but never sent
+2026-11-23 13:13:06,747 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 13:13:06,779 | INFO    | automation.authentication    | load_cookies:116 | Loaded 23 cookies from linkedin_cookies.json
+2026-11-23 13:13:10,236 | INFO    | automation.authentication    | is_linkedin_logged_in:158 | LinkedIn landed on: https://www.linkedin.com/feed/
+2026-11-23 13:13:10,236 | INFO    | automation.authentication    | ensure_logged_in:276 | linkedin session is active
+2026-11-23 13:13:10,237 | INFO    | automation.job_search        | search:272 | Search page 1 | 'React Developer' in 'India'
+2026-11-23 13:13:22,694 | INFO    | automation.job_search        | search:296 | Signed-in list yielded 1 card(s) - using the public listing endpoint
+2026-11-23 13:13:25,121 | INFO    | automation.job_search        | search:304 | Found 10 cards on page 1
+2026-11-23 13:13:33,292 | INFO    | automation.job_parser        | parse:251 | Parsed: React Developer @ Recro | Bengaluru, Karnataka, India | easy_apply=True | exp=3.0
+2026-11-23 13:13:33,368 | INFO    | main                         | run:281 | MATCH 100/100 - applying to React Developer @ Recro
+2026-11-23 13:13:35,768 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for React Developer @ Recro
+2026-11-23 13:13:35,851 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:13:35,947 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:13:38,673 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 2 for React Developer @ Recro
+2026-11-23 13:13:38,868 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:13:38,869 | DEBUG   | automation.form_handler      | fill:349 | Skipping resume chooser field: Harshit_Resume.pdf
+2026-11-23 13:13:39,039 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:13:41,431 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 3 for React Developer @ Recro
+2026-11-23 13:13:41,448 | DEBUG   | automation.form_handler      | discover:228 | Discovered 0 fields (0 labelled)
+2026-11-23 13:13:41,475 | DEBUG   | automation.form_handler      | discover:228 | Discovered 0 fields (0 labelled)
+2026-11-23 13:13:41,515 | INFO    | automation.easy_apply        | apply:243 | AUTO_SUBMIT is off - form is complete, discarding draft
+2026-11-23 13:13:43,785 | DEBUG   | database.db                  | record_application:201 | Recorded PREPARED_NOT_SUBMITTED for React Developer @ Recro
+2026-11-23 13:13:43,789 | INFO    | main                         | run:319 | PREPARED_NOT_SUBMITTED: React Developer @ Recro
+2026-11-23 13:13:52,085 | INFO    | automation.job_parser        | parse:251 | Parsed: React JS Developer @ Recro | Bangalore Urban, Karnataka, India | easy_apply=True | exp=6.0
+2026-11-23 13:13:52,102 | INFO    | main                         | run:281 | MATCH 70/100 - applying to React JS Developer @ Recro
+2026-11-23 13:13:54,502 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for React JS Developer @ Recro
+2026-11-23 13:13:54,611 | DEBUG   | automation.form_handler      | discover:228 | Discovered 5 fields (5 labelled)
+2026-11-23 13:13:54,716 | DEBUG   | automation.form_handler      | discover:228 | Discovered 5 fields (5 labelled)
+2026-11-23 13:13:57,022 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 2 for React JS Developer @ Recro
+2026-11-23 13:13:57,170 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:13:57,170 | DEBUG   | automation.form_handler      | fill:349 | Skipping resume chooser field: Harshit_Resume.pdf
+2026-11-23 13:13:57,305 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:13:59,803 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 3 for React JS Developer @ Recro
+2026-11-23 13:13:59,813 | DEBUG   | automation.form_handler      | discover:228 | Discovered 0 fields (0 labelled)
+2026-11-23 13:13:59,830 | DEBUG   | automation.form_handler      | discover:228 | Discovered 0 fields (0 labelled)
+2026-11-23 13:14:01,905 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 4 for React JS Developer @ Recro
+2026-11-23 13:14:01,915 | DEBUG   | automation.form_handler      | discover:228 | Discovered 0 fields (0 labelled)
+2026-11-23 13:14:01,931 | DEBUG   | automation.form_handler      | discover:228 | Discovered 0 fields (0 labelled)
+2026-11-23 13:14:03,759 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 5 for React JS Developer @ Recro
+2026-11-23 13:14:03,822 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:14:03,855 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:14:03,922 | INFO    | automation.easy_apply        | apply:243 | AUTO_SUBMIT is off - form is complete, discarding draft
+2026-11-23 13:14:06,074 | DEBUG   | database.db                  | record_application:201 | Recorded PREPARED_NOT_SUBMITTED for React JS Developer @ Recro
+2026-11-23 13:14:06,080 | INFO    | main                         | run:319 | PREPARED_NOT_SUBMITTED: React JS Developer @ Recro
+2026-11-23 13:14:12,050 | INFO    | main                         | run:231 | Duplicate (SKIPPED_ALREADY_APPLIED): React JS Developer @ Allime Tech Solutions
+2026-11-23 13:14:17,052 | INFO    | automation.job_parser        | parse:251 | Parsed: Senior User Interface Engineer @ Allime Tech Solutions | Bengaluru, Karnataka, India | easy_apply=False | exp=5.0
+2026-11-23 13:14:17,058 | INFO    | main                         | run:267 | No Easy Apply: Senior User Interface Engineer @ Allime Tech Solutions
+2026-11-23 13:14:17,064 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_NO_EASY_APPLY for Senior User Interface Engineer @ Allime Tech Solutions
+2026-11-23 13:14:17,064 | INFO    | main                         | run:213 | Reached MAX_JOBS_TO_PROCESS for linkedin
+2026-11-23 13:14:20,760 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 13:14:20,762 | INFO    | services.exporter            | export_session:76 | Exported 3 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_131420.csv
+2026-11-23 13:14:20,776 | INFO    | main                         | main:388 | Finished in 1.3 minutes
+2026-11-23 13:42:33,100 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 13:42:33,442 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 13:42:33,458 | INFO    | main                         | run:139 | Session start | platforms=linkedin | auto_submit=True | min_score=60 | max_apps=100
+2026-11-23 13:42:36,853 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 13:42:36,940 | INFO    | automation.authentication    | load_cookies:116 | Loaded 23 cookies from linkedin_cookies.json
+2026-11-23 13:42:39,526 | INFO    | automation.authentication    | is_linkedin_logged_in:158 | LinkedIn landed on: https://www.linkedin.com/feed/
+2026-11-23 13:42:39,526 | INFO    | automation.authentication    | ensure_logged_in:276 | linkedin session is active
+2026-11-23 13:42:39,527 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:42:55,719 | INFO    | automation.job_search        | search:296 | Signed-in list yielded 1 card(s) - using the public listing endpoint
+2026-11-23 13:42:58,601 | INFO    | automation.job_search        | search:304 | Found 8 cards on page 1
+2026-11-23 13:43:01,014 | INFO    | automation.job_search        | search:272 | Search page 2 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:43:24,125 | INFO    | automation.job_search        | search:287 | No results rendered for 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:43:29,337 | INFO    | automation.job_parser        | parse:251 | Parsed: Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited. | Delhi, India | easy_apply=True | exp=5.0
+2026-11-23 13:43:29,367 | INFO    | main                         | run:281 | MATCH 85/100 - applying to Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited.
+2026-11-23 13:43:31,403 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited.
+2026-11-23 13:43:31,468 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:43:31,548 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:43:33,464 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 2 for Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited.
+2026-11-23 13:43:33,613 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:43:33,613 | DEBUG   | automation.form_handler      | fill:349 | Skipping resume chooser field: Harshit_Resume.pdf
+2026-11-23 13:43:34,109 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:43:35,740 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 3 for Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited.
+2026-11-23 13:43:35,846 | DEBUG   | automation.form_handler      | discover:228 | Discovered 6 fields (6 labelled)
+2026-11-23 13:44:06,229 | WARNING | automation.form_handler      | fill:373 | No supported answer for: Are you ready to join imm or max 30 days
+2026-11-23 13:46:00,914 | WARNING | automation.form_handler      | fill:373 | No supported answer for: Are you available to attend the face-to-face interview drive scheduled for 28th November 2026 in Delhi?
+2026-11-23 13:46:00,982 | WARNING | automation.form_handler      | _fill_text:271 | Could not type into 'How many years of experience do you have in Frontend Developer (React.JS + Node.JS)?': Locator.scroll_into_view_if_needed: Target page, context or browser has been closed
+2026-11-23 13:46:01,281 | INFO    | services.question_handler    | answer:213 | Rule matched but profile has no value for: What is your current CTC in Lacs per annum?
+2026-11-23 13:46:02,713 | WARNING | automation.form_handler      | fill:373 | No supported answer for: What is your current CTC in Lacs per annum?
+2026-11-23 13:46:02,714 | INFO    | services.question_handler    | answer:213 | Rule matched but profile has no value for: What is your expected CTC in Lacs per annum?
+2026-11-23 13:46:03,557 | WARNING | automation.form_handler      | fill:373 | No supported answer for: What is your expected CTC in Lacs per annum?
+2026-11-23 13:46:03,557 | WARNING | automation.easy_apply        | apply:220 | Unanswerable question(s): Are you currently residing in Delhi / NCR or willing to relocate to Delhi / NCR?; Are you ready to join imm or max 30 days; Are you available to attend the face-to-face interview drive scheduled for 28th November 2026 in Delhi?; How many years of experience do you have in Frontend Developer (React.JS + Node.JS)?; What is your current CTC in Lacs per annum?; What is your expected CTC in Lacs per annum?
+2026-11-23 13:46:03,564 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited.
+2026-11-23 13:46:03,568 | INFO    | main                         | run:319 | NEEDS_HUMAN: Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited.
+2026-11-23 13:46:03,789 | DEBUG   | automation.browser           | stop:85 | Shutdown step failed: Playwright connection closed
+2026-11-23 13:46:03,790 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 13:46:03,791 | INFO    | services.exporter            | export_session:76 | Exported 1 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_134603.csv
+2026-11-23 13:46:03,808 | INFO    | main                         | main:388 | Finished in 3.5 minutes
+2026-11-23 13:46:03,824 | ERROR   | asyncio                      | default_exception_handler:1885 | Future exception was never retrieved
+future: <Future finished exception=Exception('Connection closed while reading from the driver')>
+Exception: Connection closed while reading from the driver
+2026-11-23 13:46:07,314 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 13:46:07,478 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 13:46:07,492 | INFO    | main                         | run:139 | Session start | platforms=linkedin | auto_submit=True | min_score=60 | max_apps=100
+2026-11-23 13:46:08,229 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 13:46:08,244 | INFO    | automation.authentication    | load_cookies:116 | Loaded 23 cookies from linkedin_cookies.json
+2026-11-23 13:46:10,959 | INFO    | automation.authentication    | is_linkedin_logged_in:158 | LinkedIn landed on: https://www.linkedin.com/feed/
+2026-11-23 13:46:10,960 | INFO    | automation.authentication    | ensure_logged_in:276 | linkedin session is active
+2026-11-23 13:46:10,960 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:46:24,104 | INFO    | automation.job_search        | search:296 | Signed-in list yielded 1 card(s) - using the public listing endpoint
+2026-11-23 13:46:26,701 | INFO    | automation.job_search        | search:304 | Found 8 cards on page 1
+2026-11-23 13:46:29,556 | INFO    | automation.job_search        | search:272 | Search page 2 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:46:52,663 | INFO    | automation.job_search        | search:287 | No results rendered for 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:46:57,380 | INFO    | automation.job_parser        | parse:251 | Parsed: Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited. | Delhi, India | easy_apply=False | exp=5.0
+2026-11-23 13:46:57,744 | INFO    | main                         | run:261 | LinkedIn says already applied: Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited.
+2026-11-23 13:46:57,751 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_ALREADY_APPLIED for Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited.
+2026-11-23 13:47:02,985 | INFO    | automation.job_parser        | parse:251 | Parsed: Senior Full Stack Developer, Exp- 4+Years, Noida-58, WFO @ Smc Global Securties Limited. | Noida, Uttar Pradesh, India | easy_apply=True | exp=4.0
+2026-11-23 13:47:03,021 | INFO    | main                         | run:281 | MATCH 92/100 - applying to Senior Full Stack Developer, Exp- 4+Years, Noida-58, WFO @ Smc Global Securties Limited.
+2026-11-23 13:47:05,311 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for Senior Full Stack Developer, Exp- 4+Years, Noida-58, WFO @ Smc Global Securties Limited.
+2026-11-23 13:47:05,398 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:47:05,471 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:47:08,087 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 2 for Senior Full Stack Developer, Exp- 4+Years, Noida-58, WFO @ Smc Global Securties Limited.
+2026-11-23 13:47:08,244 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:47:08,244 | DEBUG   | automation.form_handler      | fill:349 | Skipping resume chooser field: Harshit_Resume.pdf
+2026-11-23 13:47:08,381 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:47:10,053 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 3 for Senior Full Stack Developer, Exp- 4+Years, Noida-58, WFO @ Smc Global Securties Limited.
+2026-11-23 13:47:10,129 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:47:10,129 | INFO    | services.question_handler    | answer:219 | Answer '30' does not fit the offered options ['Yes', 'No'] for: Are you serving notice period?
+2026-11-23 13:47:42,812 | WARNING | automation.form_handler      | fill:373 | No supported answer for: Are you serving notice period?
+2026-11-23 13:47:44,320 | INFO    | services.question_handler    | answer:213 | Rule matched but profile has no value for: What is your Current CTC ?
+2026-11-23 13:49:26,676 | WARNING | automation.form_handler      | fill:373 | No supported answer for: What is your Current CTC ?
+2026-11-23 13:49:28,190 | INFO    | services.question_handler    | answer:213 | Rule matched but profile has no value for: What is your Expected CTC ?
+2026-11-23 13:49:30,316 | WARNING | automation.form_handler      | fill:373 | No supported answer for: What is your Expected CTC ?
+2026-11-23 13:49:30,317 | WARNING | automation.easy_apply        | apply:220 | Unanswerable question(s): Are you serving notice period?; What is your Current CTC ?; What is your Expected CTC ?
+2026-11-23 13:49:30,339 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Senior Full Stack Developer, Exp- 4+Years, Noida-58, WFO @ Smc Global Securties Limited.
+2026-11-23 13:49:30,343 | INFO    | main                         | run:319 | NEEDS_HUMAN: Senior Full Stack Developer, Exp- 4+Years, Noida-58, WFO @ Smc Global Securties Limited.
+2026-11-23 13:49:48,160 | INFO    | automation.job_parser        | parse:251 | Parsed: Senior Developer / Team Lead @ Ramp Infotech | Noida, Uttar Pradesh, India | easy_apply=True | exp=8.0
+2026-11-23 13:49:48,167 | INFO    | main                         | run:274 | Score 0 < 60, skipping: Senior Developer / Team Lead @ Ramp Infotech
+2026-11-23 13:49:48,174 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Senior Developer / Team Lead @ Ramp Infotech
+2026-11-23 13:49:54,740 | INFO    | automation.job_parser        | parse:251 | Parsed: Lead React Native @ Ramp Infotech | Noida, Uttar Pradesh, India | easy_apply=True | exp=6.0
+2026-11-23 13:49:55,135 | INFO    | main                         | run:274 | Score 0 < 60, skipping: Lead React Native @ Ramp Infotech
+2026-11-23 13:49:55,151 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Lead React Native @ Ramp Infotech
+2026-11-23 13:50:03,454 | INFO    | automation.job_parser        | parse:251 | Parsed: Senior Full Stack Web Developer @ Digital India Corporation | Noida, Uttar Pradesh, India | easy_apply=True | exp=3.0
+2026-11-23 13:50:03,525 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Senior Full Stack Web Developer @ Digital India Corporation
+2026-11-23 13:50:05,689 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for Senior Full Stack Web Developer @ Digital India Corporation
+2026-11-23 13:50:05,750 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:50:05,831 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:50:08,575 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 2 for Senior Full Stack Web Developer @ Digital India Corporation
+2026-11-23 13:50:08,754 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:50:08,754 | DEBUG   | automation.form_handler      | fill:349 | Skipping resume chooser field: Harshit_Resume.pdf
+2026-11-23 13:50:08,921 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:50:11,292 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 3 for Senior Full Stack Web Developer @ Digital India Corporation
+2026-11-23 13:50:11,347 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:50:11,747 | WARNING | automation.easy_apply        | apply:220 | Unanswerable question(s): Have you completed the following level of education: Bachelor's Degree?
+2026-11-23 13:50:13,691 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Senior Full Stack Web Developer @ Digital India Corporation
+2026-11-23 13:50:13,696 | INFO    | main                         | run:319 | NEEDS_HUMAN: Senior Full Stack Web Developer @ Digital India Corporation
+2026-11-23 13:50:23,856 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 13:50:24,390 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 13:50:25,082 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=True | min_score=60 | max_apps=5
+2026-11-23 13:50:27,450 | WARNING | automation.browser           | start:64 | Could not launch channel 'chrome' (BrowserType.launch_persistent_context: Opening in existing browser session. This usually means that the profile is already in use by another instance of Chromium.) - falling back to bundled Chromium
+2026-11-23 13:50:27,458 | ERROR   | main                         | run:332 | Browser error: BrowserType.launch_persistent_context: Executable doesn't exist at C:\Users\HP\AppData\Local\ms-playwright\chromium-1255\chrome-win64\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 152, in run
+    page = browser.start()
+  File "C:\Users\HP\Desktop\auto_job\automation\browser.py", line 69, in start
+    self.context = self._playwright.chromium.launch_persistent_context(**launch_kwargs)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 4422, in launch_persistent_context
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.launch_persistent_context(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<52 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\browser_type.py", line 340, in launch_persistent_context
+    result = await self._channel.launchPersistentContext(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+playwright._impl._errors.Error: BrowserType.launch_persistent_context: Executable doesn't exist at C:\Users\HP\AppData\Local\ms-playwright\chromium-1255\chrome-win64\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-11-23 13:50:27,512 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 13:50:27,513 | INFO    | services.exporter            | export_session:71 | Nothing to export - no jobs were processed
+2026-11-23 13:50:27,515 | INFO    | main                         | main:388 | Finished in 0.1 minutes
+2026-11-23 13:50:31,244 | INFO    | automation.job_parser        | parse:251 | Parsed: Senior Full Stack Developer (MERN Stack) @ Digital India Corporation | Delhi, India | easy_apply=True | exp=4.0
+2026-11-23 13:50:31,262 | INFO    | main                         | run:281 | MATCH 92/100 - applying to Senior Full Stack Developer (MERN Stack) @ Digital India Corporation
+2026-11-23 13:50:37,081 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for Senior Full Stack Developer (MERN Stack) @ Digital India Corporation
+2026-11-23 13:50:37,320 | DEBUG   | automation.form_handler      | discover:228 | Discovered 5 fields (5 labelled)
+2026-11-23 13:50:37,331 | DEBUG   | automation.form_handler      | fill:349 | Skipping resume chooser field: Harshit_Resume.pdf
+2026-11-23 13:50:37,536 | DEBUG   | automation.form_handler      | discover:228 | Discovered 5 fields (5 labelled)
+2026-11-23 13:50:45,495 | INFO    | automation.easy_apply        | apply:254 | SUBMITTED: Senior Full Stack Developer (MERN Stack) @ Digital India Corporation
+2026-11-23 13:50:45,641 | DEBUG   | database.db                  | record_application:201 | Recorded SUBMITTED for Senior Full Stack Developer (MERN Stack) @ Digital India Corporation
+2026-11-23 13:50:45,648 | INFO    | main                         | run:319 | SUBMITTED: Senior Full Stack Developer (MERN Stack) @ Digital India Corporation
+2026-11-23 13:50:58,547 | INFO    | main                         | run:238 | Blocked (title contains blocked keyword 'react native'): Lead React Native @ YesMadam
+2026-11-23 13:50:58,565 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_BLOCKED for Lead React Native @ YesMadam
+2026-11-23 13:50:58,566 | INFO    | main                         | run:238 | Blocked (title contains blocked keyword 'react native'): Lead React Native @ YesMadam
+2026-11-23 13:50:58,573 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_BLOCKED for Lead React Native @ YesMadam
+2026-11-23 13:51:17,027 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Frontend Developer' in 'Delhi, India'
+2026-11-23 13:51:18,921 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 13:51:19,084 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 13:51:19,448 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=True | min_score=60 | max_apps=100
+2026-11-23 13:51:20,687 | WARNING | automation.browser           | start:64 | Could not launch channel 'chrome' (BrowserType.launch_persistent_context: Opening in existing browser session. This usually means that the profile is already in use by another instance of Chromium.) - falling back to bundled Chromium
+2026-11-23 13:51:21,263 | ERROR   | main                         | run:332 | Browser error: BrowserType.launch_persistent_context: Executable doesn't exist at C:\Users\HP\AppData\Local\ms-playwright\chromium-1255\chrome-win64\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 152, in run
+    page = browser.start()
+  File "C:\Users\HP\Desktop\auto_job\automation\browser.py", line 69, in start
+    self.context = self._playwright.chromium.launch_persistent_context(**launch_kwargs)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 4422, in launch_persistent_context
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.launch_persistent_context(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<52 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\browser_type.py", line 340, in launch_persistent_context
+    result = await self._channel.launchPersistentContext(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+playwright._impl._errors.Error: BrowserType.launch_persistent_context: Executable doesn't exist at C:\Users\HP\AppData\Local\ms-playwright\chromium-1255\chrome-win64\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-11-23 13:51:21,295 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 13:51:21,296 | INFO    | services.exporter            | export_session:71 | Nothing to export - no jobs were processed
+2026-11-23 13:51:21,300 | INFO    | main                         | main:388 | Finished in 0.0 minutes
+2026-11-23 13:51:32,210 | INFO    | automation.job_search        | search:296 | Signed-in list yielded 1 card(s) - using the public listing endpoint
+2026-11-23 13:51:35,056 | INFO    | automation.job_search        | search:304 | Found 2 cards on page 1
+2026-11-23 13:51:37,595 | INFO    | automation.job_search        | search:272 | Search page 2 | 'Frontend Developer' in 'Delhi, India'
+2026-11-23 13:52:00,892 | INFO    | automation.job_search        | search:287 | No results rendered for 'Frontend Developer' in 'Delhi, India'
+2026-11-23 13:52:00,894 | INFO    | main                         | run:231 | Duplicate (SKIPPED_ALREADY_APPLIED): Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited.
+2026-11-23 13:52:00,895 | INFO    | main                         | run:231 | Duplicate (SUBMITTED): Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited.
+2026-11-23 13:52:18,225 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Frontend Developer' in 'India'
+2026-11-23 13:52:31,258 | INFO    | automation.job_search        | search:296 | Signed-in list yielded 1 card(s) - using the public listing endpoint
+2026-11-23 13:52:33,528 | INFO    | automation.job_search        | search:304 | Found 10 cards on page 1
+2026-11-23 13:52:37,405 | INFO    | automation.job_search        | search:272 | Search page 2 | 'Frontend Developer' in 'India'
+2026-11-23 13:53:00,560 | INFO    | automation.job_search        | search:287 | No results rendered for 'Frontend Developer' in 'India'
+2026-11-23 13:53:05,304 | INFO    | automation.job_parser        | parse:251 | Parsed: React Developer @ Recro | Bengaluru, Karnataka, India | easy_apply=True | exp=3.0
+2026-11-23 13:53:05,340 | INFO    | main                         | run:281 | MATCH 100/100 - applying to React Developer @ Recro
+2026-11-23 13:53:07,833 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for React Developer @ Recro
+2026-11-23 13:53:07,909 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:53:07,994 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:53:10,140 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 2 for React Developer @ Recro
+2026-11-23 13:53:10,292 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:53:10,292 | DEBUG   | automation.form_handler      | fill:349 | Skipping resume chooser field: Harshit_Resume.pdf
+2026-11-23 13:53:10,450 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:53:12,900 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 3 for React Developer @ Recro
+2026-11-23 13:53:12,916 | DEBUG   | automation.form_handler      | discover:228 | Discovered 0 fields (0 labelled)
+2026-11-23 13:53:12,945 | DEBUG   | automation.form_handler      | discover:228 | Discovered 0 fields (0 labelled)
+2026-11-23 13:53:19,778 | INFO    | automation.easy_apply        | apply:254 | SUBMITTED: React Developer @ Recro
+2026-11-23 13:53:19,787 | DEBUG   | database.db                  | record_application:201 | Recorded SUBMITTED for React Developer @ Recro
+2026-11-23 13:53:19,792 | INFO    | main                         | run:319 | SUBMITTED: React Developer @ Recro
+2026-11-23 13:53:32,053 | INFO    | main                         | run:231 | Duplicate (SUBMITTED): React Developer @ Recro
+2026-11-23 13:53:32,053 | INFO    | main                         | run:238 | Blocked (title contains blocked keyword 'angular'): Angular Developer - Madipakkam @ Sanvi Engineering And Business Consulting Solutions
+2026-11-23 13:53:32,060 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_BLOCKED for Angular Developer - Madipakkam @ Sanvi Engineering And Business Consulting Solutions
+2026-11-23 13:53:32,060 | INFO    | main                         | run:231 | Duplicate (SKIPPED_ALREADY_APPLIED): Angular Developer - Madipakkam @ Sanvi Engineering And Business Consulting Solutions
+2026-11-23 13:53:37,137 | INFO    | automation.job_parser        | parse:251 | Parsed: React JS Developer @ Data Eminence | Bangalore Urban, Karnataka, India | easy_apply=True | exp=6.0
+2026-11-23 13:53:37,143 | INFO    | main                         | run:274 | Score 0 < 60, skipping: React JS Developer @ Data Eminence
+2026-11-23 13:53:37,149 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for React JS Developer @ Data Eminence
+2026-11-23 13:53:42,951 | INFO    | automation.job_parser        | parse:251 | Parsed: Salesforce UI/UX Developer (Figma Experience Cloud) @ Data Eminence | Warangal, Telangana, India | easy_apply=True | exp=5.0
+2026-11-23 13:53:42,958 | INFO    | main                         | run:274 | Score 0 < 60, skipping: Salesforce UI/UX Developer (Figma Experience Cloud) @ Data Eminence
+2026-11-23 13:53:42,965 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Salesforce UI/UX Developer (Figma Experience Cloud) @ Data Eminence
+2026-11-23 13:53:44,121 | INFO    | main                         | run:231 | Duplicate (SKIPPED_ALREADY_APPLIED): React Developer @ Data Eminence
+2026-11-23 13:53:49,702 | INFO    | automation.job_parser        | parse:251 | Parsed: Shopify Developer @ Data Eminence | Chennai, Tamil Nadu, India | easy_apply=True | exp=2.0
+2026-11-23 13:53:49,709 | INFO    | main                         | run:274 | Score 0 < 60, skipping: Shopify Developer @ Data Eminence
+2026-11-23 13:53:49,715 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Shopify Developer @ Data Eminence
+2026-11-23 13:53:56,807 | INFO    | automation.job_parser        | parse:251 | Parsed: Flutter Developer @ Allime Tech Solutions | Bengaluru, Karnataka, India | easy_apply=True | exp=4.0
+2026-11-23 13:53:56,814 | INFO    | main                         | run:274 | Score 0 < 60, skipping: Flutter Developer @ Allime Tech Solutions
+2026-11-23 13:53:56,820 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Flutter Developer @ Allime Tech Solutions
+2026-11-23 13:54:03,839 | INFO    | automation.job_parser        | parse:251 | Parsed: Senior Shopify Developer @ Allime Tech Solutions | Ahmedabad, Gujarat, India | easy_apply=True | exp=4.0
+2026-11-23 13:54:03,849 | INFO    | main                         | run:274 | Score 0 < 60, skipping: Senior Shopify Developer @ Allime Tech Solutions
+2026-11-23 13:54:03,855 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Senior Shopify Developer @ Allime Tech Solutions
+2026-11-23 13:54:24,024 | INFO    | automation.job_search        | search:272 | Search page 1 | 'React.js Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:54:37,105 | INFO    | automation.job_search        | search:296 | Signed-in list yielded 1 card(s) - using the public listing endpoint
+2026-11-23 13:54:39,373 | INFO    | automation.job_search        | search:304 | Found 5 cards on page 1
+2026-11-23 13:54:42,117 | INFO    | automation.job_search        | search:272 | Search page 2 | 'React.js Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:55:05,383 | INFO    | automation.job_search        | search:287 | No results rendered for 'React.js Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:55:05,383 | INFO    | main                         | run:231 | Duplicate (SKIPPED_ALREADY_APPLIED): Walk in Frontend Developer- (React.JS + Node.JS) @ Smc Global Securties Limited.
+2026-11-23 13:55:10,770 | INFO    | automation.job_parser        | parse:251 | Parsed: Senior Full Stack Web Developer @ Smc Global Securties Limited. | Noida, Uttar Pradesh, India | easy_apply=True | exp=3.0
+2026-11-23 13:55:10,794 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Senior Full Stack Web Developer @ Smc Global Securties Limited.
+2026-11-23 13:55:13,083 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 1 for Senior Full Stack Web Developer @ Smc Global Securties Limited.
+2026-11-23 13:55:13,138 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:55:13,212 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:55:16,033 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 2 for Senior Full Stack Web Developer @ Smc Global Securties Limited.
+2026-11-23 13:55:16,182 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:55:16,183 | DEBUG   | automation.form_handler      | fill:349 | Skipping resume chooser field: Harshit_Resume.pdf
+2026-11-23 13:55:16,353 | DEBUG   | automation.form_handler      | discover:228 | Discovered 1 fields (1 labelled)
+2026-11-23 13:55:18,875 | INFO    | automation.easy_apply        | apply:208 | Easy Apply step 3 for Senior Full Stack Web Developer @ Smc Global Securties Limited.
+2026-11-23 13:55:18,928 | DEBUG   | automation.form_handler      | discover:228 | Discovered 3 fields (3 labelled)
+2026-11-23 13:55:19,172 | WARNING | automation.easy_apply        | apply:220 | Unanswerable question(s): Have you completed the following level of education: Bachelor's Degree?
+2026-11-23 13:55:20,957 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Senior Full Stack Web Developer @ Smc Global Securties Limited.
+2026-11-23 13:55:20,961 | INFO    | main                         | run:319 | NEEDS_HUMAN: Senior Full Stack Web Developer @ Smc Global Securties Limited.
+2026-11-23 13:55:29,173 | INFO    | main                         | run:231 | Duplicate (SUBMITTED): Senior Full Stack Web Developer @ IBN BATUTTAH
+2026-11-23 13:55:29,173 | INFO    | main                         | run:231 | Duplicate (SKIPPED_LOW_SCORE): Senior Full Stack Web Developer @ IBN BATUTTAH
+2026-11-23 13:55:33,853 | INFO    | automation.job_parser        | parse:251 | Parsed: User Interface Designer @ Wayone IT Solutions | Noida, Uttar Pradesh, India | easy_apply=True | exp=None
+2026-11-23 13:55:33,879 | INFO    | main                         | run:274 | Score 51 < 60, skipping: User Interface Designer @ Wayone IT Solutions
+2026-11-23 13:55:33,886 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for User Interface Designer @ Wayone IT Solutions
+2026-11-23 13:55:55,175 | INFO    | automation.job_search        | search:272 | Search page 1 | 'React.js Developer' in 'Delhi, India'
+2026-11-23 13:56:08,463 | INFO    | automation.job_search        | search:296 | Signed-in list yielded 1 card(s) - using the public listing endpoint
+2026-11-23 13:56:10,902 | INFO    | automation.job_search        | search:304 | Found 2 cards on page 1
+2026-11-23 13:56:14,520 | INFO    | automation.job_search        | search:272 | Search page 2 | 'React.js Developer' in 'Delhi, India'
+2026-11-23 13:56:14,526 | ERROR   | main                         | run:200 | Search failed for 'React.js Developer' in 'Delhi, India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,543 | INFO    | automation.job_search        | search:272 | Search page 1 | 'React.js Developer' in 'India'
+2026-11-23 13:56:14,544 | ERROR   | main                         | run:200 | Search failed for 'React.js Developer' in 'India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,546 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Next.js Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:56:14,546 | ERROR   | main                         | run:200 | Search failed for 'Next.js Developer' in 'Gurugram, Haryana, India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,548 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Next.js Developer' in 'Delhi, India'
+2026-11-23 13:56:14,549 | ERROR   | main                         | run:200 | Search failed for 'Next.js Developer' in 'Delhi, India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,552 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Next.js Developer' in 'India'
+2026-11-23 13:56:14,555 | ERROR   | main                         | run:200 | Search failed for 'Next.js Developer' in 'India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,558 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Full Stack Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:56:14,559 | ERROR   | main                         | run:200 | Search failed for 'Full Stack Developer' in 'Gurugram, Haryana, India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,563 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Full Stack Developer' in 'Delhi, India'
+2026-11-23 13:56:14,564 | ERROR   | main                         | run:200 | Search failed for 'Full Stack Developer' in 'Delhi, India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,566 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Full Stack Developer' in 'India'
+2026-11-23 13:56:14,567 | ERROR   | main                         | run:200 | Search failed for 'Full Stack Developer' in 'India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,570 | INFO    | automation.job_search        | search:272 | Search page 1 | 'JavaScript Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:56:14,572 | ERROR   | main                         | run:200 | Search failed for 'JavaScript Developer' in 'Gurugram, Haryana, India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,575 | INFO    | automation.job_search        | search:272 | Search page 1 | 'JavaScript Developer' in 'Delhi, India'
+2026-11-23 13:56:14,576 | ERROR   | main                         | run:200 | Search failed for 'JavaScript Developer' in 'Delhi, India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,578 | INFO    | automation.job_search        | search:272 | Search page 1 | 'JavaScript Developer' in 'India'
+2026-11-23 13:56:14,579 | ERROR   | main                         | run:200 | Search failed for 'JavaScript Developer' in 'India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,582 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Node.js Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:56:14,584 | ERROR   | main                         | run:200 | Search failed for 'Node.js Developer' in 'Gurugram, Haryana, India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,588 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Node.js Developer' in 'Delhi, India'
+2026-11-23 13:56:14,591 | ERROR   | main                         | run:200 | Search failed for 'Node.js Developer' in 'Delhi, India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,594 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Node.js Developer' in 'India'
+2026-11-23 13:56:14,595 | ERROR   | main                         | run:200 | Search failed for 'Node.js Developer' in 'India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,601 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Software Engineer' in 'Gurugram, Haryana, India'
+2026-11-23 13:56:14,604 | ERROR   | main                         | run:200 | Search failed for 'Software Engineer' in 'Gurugram, Haryana, India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,607 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Software Engineer' in 'Delhi, India'
+2026-11-23 13:56:14,609 | ERROR   | main                         | run:200 | Search failed for 'Software Engineer' in 'Delhi, India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,611 | INFO    | automation.job_search        | search:272 | Search page 1 | 'Software Engineer' in 'India'
+2026-11-23 13:56:14,613 | ERROR   | main                         | run:200 | Search failed for 'Software Engineer' in 'India': Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 193, in run
+    discovered = list(searcher.search(keyword, location))
+  File "C:\Users\HP\Desktop\auto_job\automation\job_search.py", line 274, in search
+    self.page.goto(url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2026-11-23 13:56:14,994 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 13:56:14,997 | INFO    | services.exporter            | export_session:76 | Exported 17 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_135614.csv
+2026-11-23 13:56:15,020 | INFO    | main                         | main:388 | Finished in 10.1 minutes
+2026-11-23 13:56:20,626 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 13:56:20,787 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 13:56:20,802 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=True | min_score=60 | max_apps=100
+2026-11-23 13:56:21,544 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 13:56:21,557 | INFO    | automation.authentication    | load_cookies:116 | Loaded 18 cookies from naukri_cookies.json
+2026-11-23 13:56:29,896 | INFO    | automation.authentication    | is_naukri_logged_in:219 | Naukri landed on: https://www.naukri.com/mnjuser/homepage
+2026-11-23 13:56:29,897 | INFO    | automation.authentication    | ensure_logged_in:276 | naukri session is active
+2026-11-23 13:56:29,898 | INFO    | automation.naukri            | search:198 | Naukri page 1 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:56:34,216 | INFO    | automation.naukri            | search:217 | Found 1 Naukri cards
+2026-11-23 13:56:38,088 | INFO    | automation.naukri            | search:198 | Naukri page 2 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 13:56:43,159 | INFO    | automation.naukri            | search:217 | Found 20 Naukri cards
+2026-11-23 13:56:48,918 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Etl Developer @ Leading Client | exp=2.0
+2026-11-23 13:56:49,057 | INFO    | main                         | run:281 | MATCH 87/100 - applying to Etl Developer @ Leading Client
+2026-11-23 13:56:51,740 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Etl Developer @ Leading Client
+2026-11-23 13:56:51,740 | INFO    | main                         | run:319 | NEEDS_HUMAN: Etl Developer @ Leading Client
+2026-11-23 13:57:03,240 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Developer @ Comviva | exp=1.0
+2026-11-23 13:57:03,349 | INFO    | main                         | run:281 | MATCH 78/100 - applying to Frontend Developer @ Comviva
+2026-11-23 13:57:03,371 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Frontend Developer @ Comviva
+2026-11-23 13:57:03,372 | INFO    | main                         | run:319 | NEEDS_HUMAN: Frontend Developer @ Comviva
+2026-11-23 13:57:14,108 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Web Developer @ Servicensure Technologies | exp=1.0
+2026-11-23 13:57:14,114 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Frontend Web Developer @ Servicensure Technologies
+2026-11-23 13:57:14,247 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_135714_failed_110626504842.png
+2026-11-23 13:57:14,253 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Web Developer @ Servicensure Technologies
+2026-11-23 13:57:14,253 | INFO    | main                         | run:319 | FAILED: Frontend Web Developer @ Servicensure Technologies
+2026-11-23 13:57:24,511 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: AEM Front End Developer + React @ Krazy Mantra It | exp=1.0
+2026-11-23 13:57:24,518 | INFO    | main                         | run:281 | MATCH 90/100 - applying to AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 13:57:24,625 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_135724_failed_220425503016.png
+2026-11-23 13:57:24,635 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 13:57:24,635 | INFO    | main                         | run:319 | FAILED: AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 13:57:34,676 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Software Developer @ Easemytrip | exp=3.0
+2026-11-23 13:57:34,689 | INFO    | main                         | run:281 | MATCH 78/100 - applying to Frontend Software Developer @ Easemytrip
+2026-11-23 13:57:34,821 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_135734_failed_220424001785.png
+2026-11-23 13:57:34,829 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Software Developer @ Easemytrip
+2026-11-23 13:57:34,829 | INFO    | main                         | run:319 | FAILED: Frontend Software Developer @ Easemytrip
+2026-11-23 13:57:45,618 | ERROR   | main                         | run:217 | 3 consecutive failures - stopping to avoid hammering the site
+2026-11-23 13:58:02,384 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 13:58:02,385 | INFO    | services.exporter            | export_session:76 | Exported 5 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_135802.csv
+2026-11-23 13:58:02,431 | INFO    | main                         | main:388 | Finished in 1.7 minutes
+2026-11-23 15:58:17,996 | INFO    | services.resume_manager      | validate:65 | Resume OK: resume.pdf (55 KB)
+2026-11-23 15:58:18,364 | DEBUG   | database.db                  | __init__:36 | Database ready at C:\Users\HP\Desktop\auto_job\data\applications.sqlite3
+2026-11-23 15:58:18,377 | INFO    | main                         | run:139 | Session start | platforms=naukri | auto_submit=True | min_score=60 | max_apps=100
+2026-11-23 15:58:25,737 | INFO    | automation.browser           | start:56 | Launched chrome with profile C:\Users\HP\Desktop\auto_job\browser_profile
+2026-11-23 15:58:25,879 | INFO    | automation.authentication    | load_cookies:116 | Loaded 18 cookies from naukri_cookies.json
+2026-11-23 15:58:28,542 | INFO    | automation.authentication    | is_naukri_logged_in:219 | Naukri landed on: https://www.naukri.com/mnjuser/homepage
+2026-11-23 15:58:28,542 | INFO    | automation.authentication    | ensure_logged_in:276 | naukri session is active
+2026-11-23 15:58:28,542 | INFO    | automation.naukri            | search:198 | Naukri page 1 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 15:58:31,890 | INFO    | automation.naukri            | search:217 | Found 11 Naukri cards
+2026-11-23 15:58:35,629 | INFO    | automation.naukri            | search:198 | Naukri page 2 | 'Frontend Developer' in 'Gurugram, Haryana, India'
+2026-11-23 15:58:39,475 | INFO    | automation.naukri            | search:217 | Found 20 Naukri cards
+2026-11-23 15:58:44,777 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Assistant Designer - BIM, Geotech, REC @ Ramboll | exp=2.0
+2026-11-23 15:58:44,803 | INFO    | main                         | run:274 | Score 35 < 60, skipping: Assistant Designer - BIM, Geotech, REC @ Ramboll
+2026-11-23 15:58:44,811 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Assistant Designer - BIM, Geotech, REC @ Ramboll
+2026-11-23 15:58:48,276 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Senior Frontend Developer - HTML/CSS @ Benovymed Healthcare Private Ltd | exp=2.0
+2026-11-23 15:58:48,285 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Senior Frontend Developer - HTML/CSS @ Benovymed Healthcare Private Ltd
+2026-11-23 15:58:51,103 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Senior Frontend Developer - HTML/CSS @ Benovymed Healthcare Private Ltd
+2026-11-23 15:58:51,103 | INFO    | main                         | run:319 | NEEDS_HUMAN: Senior Frontend Developer - HTML/CSS @ Benovymed Healthcare Private Ltd
+2026-11-23 15:59:01,703 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Chief Technology Officer / Vice President - Full Stack Development @ Benovymed Healthcare Private Ltd | exp=2.0
+2026-11-23 15:59:01,738 | INFO    | main                         | run:281 | MATCH 75/100 - applying to Chief Technology Officer / Vice President - Full Stack Development @ Benovymed Healthcare Private Ltd
+2026-11-23 15:59:04,607 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Chief Technology Officer / Vice President - Full Stack Development @ Benovymed Healthcare Private Ltd
+2026-11-23 15:59:04,607 | INFO    | main                         | run:319 | NEEDS_HUMAN: Chief Technology Officer / Vice President - Full Stack Development @ Benovymed Healthcare Private Ltd
+2026-11-23 15:59:17,477 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Senior Frontend Developer - HTML/CSS @ Benovymed Healthcare Private Limited | exp=2.0
+2026-11-23 15:59:17,491 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Senior Frontend Developer - HTML/CSS @ Benovymed Healthcare Private Limited
+2026-11-23 15:59:19,955 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Senior Frontend Developer - HTML/CSS @ Benovymed Healthcare Private Limited
+2026-11-23 15:59:19,955 | INFO    | main                         | run:319 | NEEDS_HUMAN: Senior Frontend Developer - HTML/CSS @ Benovymed Healthcare Private Limited
+2026-11-23 15:59:29,137 | INFO    | main                         | run:238 | Blocked (title contains blocked keyword 'data scientist'): Data scientist @ Capgemini
+2026-11-23 15:59:29,143 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_BLOCKED for Data scientist @ Capgemini
+2026-11-23 15:59:31,005 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare Private Limited | exp=2.0
+2026-11-23 15:59:31,027 | INFO    | main                         | run:281 | MATCH 75/100 - applying to Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare Private Limited
+2026-11-23 15:59:33,119 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare Private Limited
+2026-11-23 15:59:33,119 | INFO    | main                         | run:319 | NEEDS_HUMAN: Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare Private Limited
+2026-11-23 15:59:43,945 | INFO    | main                         | run:238 | Blocked (title contains blocked keyword 'angular'): Technical Lead/Senior Full Stack Developer - Python/AngularJS @ Benovymed Healthcare Private Limited
+2026-11-23 15:59:44,409 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_BLOCKED for Technical Lead/Senior Full Stack Developer - Python/AngularJS @ Benovymed Healthcare Private Limited
+2026-11-23 15:59:46,265 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Chief Technology Officer/Vice President @ Benovymed Healthcare Private Limited | exp=2.0
+2026-11-23 15:59:46,851 | INFO    | main                         | run:281 | MATCH 75/100 - applying to Chief Technology Officer/Vice President @ Benovymed Healthcare Private Limited
+2026-11-23 15:59:48,945 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Chief Technology Officer/Vice President @ Benovymed Healthcare Private Limited
+2026-11-23 15:59:48,945 | INFO    | main                         | run:319 | NEEDS_HUMAN: Chief Technology Officer/Vice President @ Benovymed Healthcare Private Limited
+2026-11-23 16:00:02,644 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare Private Limited | exp=2.0
+2026-11-23 16:00:03,336 | INFO    | main                         | run:281 | MATCH 75/100 - applying to Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare Private Limited
+2026-11-23 16:00:05,890 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare Private Limited
+2026-11-23 16:00:05,891 | INFO    | main                         | run:319 | NEEDS_HUMAN: Chief Technology Officer/Vice President - Full Stack Development @ Benovymed Healthcare Private Limited
+2026-11-23 16:00:18,973 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Etl Developer @ Leading Client | exp=2.0
+2026-11-23 16:00:19,418 | INFO    | main                         | run:281 | MATCH 87/100 - applying to Etl Developer @ Leading Client
+2026-11-23 16:00:52,876 | WARNING | automation.naukri            | _answer_chat_step:436 | Naukri chatbot asked something unsupported: Thank you for your responses.
+2026-11-23 16:00:53,301 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Etl Developer @ Leading Client
+2026-11-23 16:00:53,311 | INFO    | main                         | run:319 | NEEDS_HUMAN: Etl Developer @ Leading Client
+2026-11-23 16:01:05,025 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Cloudera Developer @ Allime Tech Solutions | exp=2.0
+2026-11-23 16:01:05,065 | INFO    | main                         | run:274 | Score 53 < 60, skipping: Cloudera Developer @ Allime Tech Solutions
+2026-11-23 16:01:05,071 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Cloudera Developer @ Allime Tech Solutions
+2026-11-23 16:01:28,299 | ERROR   | main                         | run:247 | Parsing failed for Senior Frontend Developer @ Envision Technology Solutions: Page.goto: net::ERR_ABORTED at https://www.naukri.com/job-listings-senior-frontend-developer-envision-technology-solutions-tech-think-infotech-panipat-yamunanagar-faridabad-sonipat-gurugram-hisar-5-to-9-years-061026503794
+Call log:
+  - navigating to "https://www.naukri.com/job-listings-senior-frontend-developer-envision-technology-solutions-tech-think-infotech-panipat-yamunanagar-faridabad-sonipat-gurugram-hisar-5-to-9-years-061026503794", waiting until "domcontentloaded"
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\auto_job\main.py", line 245, in run
+    parsed = parser.parse(job)
+  File "C:\Users\HP\Desktop\auto_job\automation\naukri.py", line 235, in parse
+    self.page.goto(job.url, wait_until="domcontentloaded")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 18561, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 124, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\page.py", line 600, in goto
+    return await self._main_frame.goto(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        url=url, timeout=timeout, wait_until=wait_until, referer=referer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\frame.py", line 217, in goto
+    await self._channel.goto(
+    ...<4 lines>...
+    )
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 398, in _mapped
+    return mapper(await awaitable)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 387, in finish
+    raise e from None
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\utils\zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.Error: Page.goto: net::ERR_ABORTED at https://www.naukri.com/job-listings-senior-frontend-developer-envision-technology-solutions-tech-think-infotech-panipat-yamunanagar-faridabad-sonipat-gurugram-hisar-5-to-9-years-061026503794
+Call log:
+  - navigating to "https://www.naukri.com/job-listings-senior-frontend-developer-envision-technology-solutions-tech-think-infotech-panipat-yamunanagar-faridabad-sonipat-gurugram-hisar-5-to-9-years-061026503794", waiting until "domcontentloaded"
+
+2026-11-23 16:01:28,438 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Senior Frontend Developer @ Envision Technology Solutions
+2026-11-23 16:01:30,483 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Senior Frontend Developer @ Thumbmunkeys Technologies | exp=7.0
+2026-11-23 16:01:30,488 | INFO    | main                         | run:274 | Score 0 < 60, skipping: Senior Frontend Developer @ Thumbmunkeys Technologies
+2026-11-23 16:01:30,493 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for Senior Frontend Developer @ Thumbmunkeys Technologies
+2026-11-23 16:01:32,925 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: React Js Frontend Developer/Support - Gurugram - Immediate @ LTM | exp=8.0
+2026-11-23 16:01:32,932 | INFO    | main                         | run:274 | Score 0 < 60, skipping: React Js Frontend Developer/Support - Gurugram - Immediate @ LTM
+2026-11-23 16:01:32,937 | DEBUG   | database.db                  | record_application:201 | Recorded SKIPPED_LOW_SCORE for React Js Frontend Developer/Support - Gurugram - Immediate @ LTM
+2026-11-23 16:01:36,285 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: AEM Front End Developer + React @ Krazy Mantra It | exp=1.0
+2026-11-23 16:01:36,291 | INFO    | main                         | run:281 | MATCH 90/100 - applying to AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 16:01:36,420 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_160136_failed_220425503016.png
+2026-11-23 16:01:36,427 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 16:01:36,427 | INFO    | main                         | run:319 | FAILED: AEM Front End Developer + React @ Krazy Mantra It
+2026-11-23 16:01:49,655 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Developer @ Comviva | exp=1.0
+2026-11-23 16:01:49,666 | INFO    | main                         | run:281 | MATCH 78/100 - applying to Frontend Developer @ Comviva
+2026-11-23 16:01:49,685 | DEBUG   | database.db                  | record_application:201 | Recorded NEEDS_HUMAN for Frontend Developer @ Comviva
+2026-11-23 16:01:49,685 | INFO    | main                         | run:319 | NEEDS_HUMAN: Frontend Developer @ Comviva
+2026-11-23 16:02:02,329 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Engineer @ Syfe | exp=2.0
+2026-11-23 16:02:02,339 | INFO    | main                         | run:281 | MATCH 80/100 - applying to Frontend Engineer @ Syfe
+2026-11-23 16:02:02,692 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_160202_failed_230926501013.png
+2026-11-23 16:02:02,699 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Engineer @ Syfe
+2026-11-23 16:02:02,699 | INFO    | main                         | run:319 | FAILED: Frontend Engineer @ Syfe
+2026-11-23 16:02:16,061 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Engineer @ V Patrol | exp=2.0
+2026-11-23 16:02:16,069 | INFO    | main                         | run:281 | MATCH 80/100 - applying to Frontend Engineer @ V Patrol
+2026-11-23 16:02:16,159 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_160216_failed_180926500922.png
+2026-11-23 16:02:16,182 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Engineer @ V Patrol
+2026-11-23 16:02:16,182 | INFO    | main                         | run:319 | FAILED: Frontend Engineer @ V Patrol
+2026-11-23 16:02:27,553 | INFO    | automation.naukri            | parse:278 | Parsed Naukri: Frontend Web Developer @ Servicensure Technologies | exp=1.0
+2026-11-23 16:02:27,562 | INFO    | main                         | run:281 | MATCH 100/100 - applying to Frontend Web Developer @ Servicensure Technologies
+2026-11-23 16:02:29,465 | INFO    | automation.browser           | screenshot:115 | Screenshot saved: C:\Users\HP\Desktop\auto_job\screenshots\20261123_160227_failed_110626504842.png
+2026-11-23 16:02:29,472 | DEBUG   | database.db                  | record_application:201 | Recorded FAILED for Frontend Web Developer @ Servicensure Technologies
+2026-11-23 16:02:29,472 | INFO    | main                         | run:319 | FAILED: Frontend Web Developer @ Servicensure Technologies
+2026-11-23 16:02:39,004 | ERROR   | main                         | run:217 | 3 consecutive failures - stopping to avoid hammering the site
+2026-11-23 16:02:57,246 | INFO    | automation.browser           | stop:89 | Browser closed
+2026-11-23 16:02:57,249 | INFO    | services.exporter            | export_session:76 | Exported 19 rows -> C:\Users\HP\Desktop\auto_job\output\2026-11-23\applications_160257.csv
+2026-11-23 16:02:57,264 | INFO    | main                         | main:388 | Finished in 4.7 minutes

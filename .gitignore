@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+logs/*.log
+data/*.sqlite3
+data/answers.json
+resume/*
+!resume/.gitkeep
+browser_profile/
+screenshots/
+
+cookies/*.json
+output/

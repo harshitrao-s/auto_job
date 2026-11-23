@@ -1,0 +1,4 @@
+playwright>=1.49
+python-dotenv>=1.0
+PyYAML>=6.0
+pypdf>=5.0

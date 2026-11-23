@@ -1,0 +1,292 @@
+# ===========================================================================
+# Candidate profile - the SINGLE source of truth for every answer the bot
+# gives. Anything not stated here is treated as UNKNOWN and triggers a human
+# prompt. The bot never invents experience, salary or personal data.
+#
+# Fields marked <FILL ME> block submission until you replace them (they are
+# read off your resume - see README "Step 3").
+# ===========================================================================
+
+personal:
+  first_name: "Harshit"
+  # Taken from your LinkedIn profile, which prefills Easy Apply forms as
+  # "Harshit Yadav". The resume itself shows only "HARSHIT".
+  last_name: "Yadav"
+  email: "harshitrao84@gmail.com"
+  phone_country_code: "India (+91)"
+  phone: "9518125798"
+  city: "Rewari, Haryana, India"     # as printed on the resume
+  country: "India"
+  linkedin: "https://www.linkedin.com/in/harshit-rao27"
+  github: ""
+  portfolio: "https://harshitpp.vercel.app/"
+
+professional:
+  total_experience_years: 3          # Dec 2023 -> present
+  current_title: "Full Stack Developer"
+  # Resume: Shopperbeats is CURRENT (Apr 2026 -> present).
+  # Booming Bulls was the previous role (Jun 2025 -> Apr 2026).
+  current_company: "Shopperbeats"
+  notice_period_days: 30
+  willing_to_relocate: true
+  work_authorization_india: true
+  requires_visa_sponsorship: false
+  highest_education: "Bachelor's Degree"
+  degree: "Bachelor of Technology in Computer Science"
+  university: "Maharshi Dayanand University (MDU)"
+  graduation_year: 2024
+  # Leave salary fields null to make the bot ASK instead of guessing.
+  current_ctc_lpa: null
+  expected_ctc_lpa: null
+
+# Years of hands-on experience per skill. Used both for matching and for
+# "How many years of experience do you have with X?" questions.
+skills:
+  javascript: 3
+  es6: 3
+  typescript: 2
+  react: 3
+  react.js: 3
+  next.js: 2
+  redux: 3
+  redux toolkit: 3
+  node: 2
+  node.js: 2
+  express: 2
+  rest api: 3
+  graphql: 0
+  html: 3
+  css: 3
+  tailwind: 2
+  tailwind css: 2
+  scss: 3
+  sass: 3
+  mysql: 2
+  mongodb: 2
+  sql: 2
+  docker: 1
+  kubernetes: 1
+  git: 3
+  github: 3
+  material ui: 2
+  mui: 2
+  tanstack query: 1
+  react query: 1
+  framer motion: 2
+  gsap: 1
+  express: 2
+  express.js: 2
+  seo: 2
+  ssr: 2
+  next.js app router: 2
+  core web vitals: 2
+  accessibility: 2
+  cross-browser compatibility: 3
+  react hooks: 3
+  postman: 3
+  jira: 2
+  figma: 2
+  rest api design: 3
+  api design: 3
+  authentication: 2
+  database modelling: 2
+  database design: 2
+  frontend: 3
+  full stack: 3
+  web development: 3
+  responsive design: 3
+  performance optimization: 2
+  debugging: 3
+  agile: 3
+
+# Free-text answers for common long-form questions.
+narratives:
+  summary: >-
+    Full Stack Developer with 3 years of experience building scalable React and
+    Next.js applications, responsive frontend interfaces, and Node.js backend
+    APIs. Strong with TypeScript, Redux Toolkit, REST API integration, MySQL and
+    MongoDB, plus Docker and Kubernetes based deployment workflows.
+  why_interested: >-
+    The role matches my hands-on experience with React, Next.js and Node.js, and
+    I am looking for a team where I can own end-to-end feature delivery.
+
+# Job titles considered relevant (substring match, case-insensitive).
+target_titles:
+  - frontend developer
+  - front end developer
+  - front-end developer
+  - react developer
+  - react.js developer
+  - reactjs developer
+  - next.js developer
+  - full stack developer
+  - fullstack developer
+  - javascript developer
+  - node.js developer
+  - nodejs developer
+  - backend developer
+  - software engineer
+  - software developer
+  - web developer
+  - ui developer
+  - mern developer
+
+# Hard blockers - a job containing any of these in the TITLE is skipped.
+blocked_title_keywords:
+  - senior staff
+  - principal
+  - architect
+  - manager
+  - director
+  - head of
+  - lead engineer
+  - engineering lead
+  - intern
+  - internship
+  - trainee
+  - fresher
+  - qa
+  - tester
+  - devops
+  - data scientist
+  - machine learning
+  - android
+  - ios
+  - flutter
+  - salesforce
+  - sap
+  - .net
+  - java developer
+  - php
+  - wordpress
+  - angular
+  - vue
+  - react native
+  - golang
+  - python developer
+  - ruby
+  - sharepoint
+  - magento
+  - shopify
+
+blocked_company_keywords: []
+
+preferred_locations:
+  - gurugram
+  - gurgaon
+  - delhi
+  - noida
+  - ncr
+  - faridabad
+  - ghaziabad
+  - india
+  - remote
+
+# ---------------------------------------------------------------------------
+# Screening-question answer bank.
+#   match   : regex tested against the lowercased question label
+#   type    : number | boolean | text | choice
+#   value   : literal answer, or "skill:<name>" to pull years from `skills`
+#   For boolean, value true -> picks Yes, false -> picks No.
+# Rules are evaluated top to bottom; first match wins.
+# ---------------------------------------------------------------------------
+answer_rules:
+  - match: "how many years.*(experience|work).*(do you have)?"
+    type: number
+    value: "auto_experience"     # resolves per-skill, else total experience
+
+  - match: "(years|yrs).*(of )?(professional|total|overall|relevant).*experience"
+    type: number
+    value: "profile:professional.total_experience_years"
+
+  - match: "(notice period|how soon can you join|when can you (start|join)).*(days)?"
+    type: number
+    value: "profile:professional.notice_period_days"
+
+  - match: "(are you )?(legally )?(authori[sz]ed|eligible) to work"
+    type: boolean
+    value: true
+
+  - match: "(require|need).*(visa )?sponsorship"
+    type: boolean
+    value: false
+
+  - match: "(willing|able) to (relocate|commute|travel)"
+    type: boolean
+    value: true
+
+  - match: "(comfortable|willing).*(work from office|wfo|hybrid|onsite|on-site|in office)"
+    type: boolean
+    value: true
+
+  - match: "(do you have|have you).*(bachelor|degree|graduat)"
+    type: boolean
+    value: true
+
+  - match: "highest (level of )?(education|degree|qualification)"
+    type: choice
+    value: "profile:professional.highest_education"
+
+  - match: "current (annual )?(ctc|salary|compensation)"
+    type: number
+    value: "profile:professional.current_ctc_lpa"   # null -> asks the human
+
+  - match: "expected (annual )?(ctc|salary|compensation)"
+    type: number
+    value: "profile:professional.expected_ctc_lpa"  # null -> asks the human
+
+  - match: "(current|present) (company|employer|organization)"
+    type: text
+    value: "profile:professional.current_company"
+
+  - match: "(current|present) (job title|designation|role)"
+    type: text
+    value: "profile:professional.current_title"
+
+  - match: "(current|present) location|where are you (currently )?(based|located)"
+    type: text
+    value: "profile:personal.city"
+
+  - match: "(phone|mobile).*(country code)|country code"
+    type: choice
+    value: "profile:personal.phone_country_code"
+
+  - match: "(phone|mobile|contact) number"
+    type: text
+    value: "profile:personal.phone"
+
+  - match: "(email|e-mail) address"
+    type: text
+    value: "profile:personal.email"
+
+  - match: "linkedin( profile)?( url| link)?"
+    type: text
+    value: "profile:personal.linkedin"
+
+  - match: "(github|portfolio|website|personal site)( url| link)?"
+    type: text
+    value: "profile:personal.github"
+
+  - match: "first name|given name"
+    type: text
+    value: "profile:personal.first_name"
+
+  - match: "last name|surname|family name"
+    type: text
+    value: "profile:personal.last_name"
+
+  - match: "(tell us|why).*(interested|want to (work|join)|this role)"
+    type: text
+    value: "profile:narratives.why_interested"
+
+  - match: "(summary|about (you|yourself)|cover letter)"
+    type: text
+    value: "profile:narratives.summary"
+
+  - match: "have you (been )?(convicted|arrested)"
+    type: boolean
+    value: false
+
+  - match: "(are you|do you).*(18|eighteen) (years|yrs)"
+    type: boolean
+    value: true
